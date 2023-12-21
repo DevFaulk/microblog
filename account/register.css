@@ -1,0 +1,10 @@
+form {
+    max-width: 8rem;
+    display: flex;
+    flex-direction: column;
+    gap: 0.7rem;
+}
+
+h2 {
+    font-size: 2rem;
+}
