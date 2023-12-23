@@ -5,22 +5,19 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-
+    <title>Create A Post</title>
     <!-- Pico CSS -->
     <link
       rel="stylesheet"
       href="https://cdn.jsdelivr.net/npm/@picocss/pico@1/css/pico.classless.min.css" />
-
     <!-- Global CSS (CSS rules you want applied to all pages) -->
-    <link rel="stylesheet" href="../global.css" />
+    <link rel="stylesheet" href="/css/global.css" />
 
     <!-- Page-specific CSS -->
-    <link rel="stylesheet" href="posts.css" />
+    <link rel="stylesheet" href="create-posts.css" />
 
-    <title>Create a post</title>
 
     <!-- Run BEFORE page is finished loading (before window.onload): -->
-    <script src="../account/auth.js"></script>
     <script>
       if (isLoggedIn() === false) {
         window.location.replace("../account/login.html");
@@ -54,6 +51,6 @@
 
     <!-- Page-specific code -->
     <script src="/account/auth.js"></script>
-    <script src="/posts/posts.js"></script>
+    <script src="create-posts.js"></script>
   </body>
 </html>
