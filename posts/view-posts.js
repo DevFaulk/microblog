@@ -1,4 +1,10 @@
+// ! Unfinished
 "use strict";
+
+// Logged In Check
+if (isLoggedIn() === false) {
+  window.location.replace("../account/register.html");
+}
 
 const postCard = document.querySelector(".post-card");
 const likeButton = document.querySelector("#like-button");

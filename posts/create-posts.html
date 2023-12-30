@@ -15,16 +15,6 @@
 
     <!-- Page-specific CSS -->
     <link rel="stylesheet" href="create-posts.css" />
-
-
-    <!-- Run BEFORE page is finished loading (before window.onload): -->
-    <script src="../account/auth.js"></script>
-    <script>
-      if (isLoggedIn() === false) {
-        window.location.replace("../account/login.html");
-      }
-    </script>
-
   </head>
   <body>
     <header>
