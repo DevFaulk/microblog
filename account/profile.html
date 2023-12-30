@@ -15,21 +15,17 @@
     <link rel="stylesheet" href="profile.css" />
     <!-- Run BEFORE page is finished loading (before window.onload - don't add the `defer` attribute): -->
     <script src="auth.js"></script>
-    <script>
-      if (isLoggedIn() === false) {
-        window.location.replace("../account/register.html");
-      }
-    </script>
   </head>
   <body>
     <header>
+      <nav>
         <nav>
-          <nav>
-            <strong>Posts</strong>
-            <a href="register.html">Log out</a>
-            <a href="/index.html">Home</a>
-          </nav>
+          <strong>Posts</strong>
+          <a href="register.html">Log out</a>
+          <a href="/index.html">Home</a>
         </nav>
-      </header>
+      </nav>
+    </header>
+    <script src="profile.js"></script>
   </body>
 </html>

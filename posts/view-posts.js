@@ -1,6 +1,10 @@
 // ! Unfinished
-
 "use strict";
+
+// Logged In Check
+if (isLoggedIn() === false) {
+  window.location.replace("../account/register.html");
+}
 
 const postsBody = document.querySelector("#postsBody");
 
@@ -32,7 +36,7 @@ function generatePostCard(data) {
   // Create card body
   let postsBody = document.createElement("div");
   postsBody.className = "card-body";
-  postsBody.textContent = ""
+  postsBody.textContent = "";
 
   // Create card profile stuff
   let cardTitle = document.createElement("h5");
