@@ -6,6 +6,7 @@
     <title>View Posts</title>
     <link rel="stylesheet" href="view-posts.css" />
     <script src="/account/auth.js"></script>
+    <script src="https://code.jquery.com/jquery-3.4.1.js"></script>
   </head>
   <body>
     <header>
@@ -17,6 +18,25 @@
         <div class="post-card"></div>
       </div>
     </main>
+
+    <div class="heart-button">
+      <div class="content">
+        <span class="heart"></span>
+        <span class="text">Like</span>
+        <span class="numb"></span>
+      </div>
+    </div>
+
+    <script>
+      $(document).ready(function(){
+        $('.content').click(function(){
+          $('.content').toggleClass("heart-active")
+          $('.text').toggleClass("heart-active")
+          $('.numb').toggleClass("heart-active")
+          $('.heart').toggleClass("heart-active")
+        });
+      });
+    </script>
 
     <footer></footer>
     <script src="view-posts.js"></script>
