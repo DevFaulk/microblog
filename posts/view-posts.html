@@ -5,6 +5,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>View Posts</title>
     <link rel="stylesheet" href="view-posts.css" />
+    <script src="/account/auth.js"></script>
+    <script>
+      if (isLoggedIn() === false) {
+        window.location.replace("../account/login.html");
+      }
+    </script>
   </head>
   <body>
     <header>
@@ -12,9 +18,7 @@
     </header>
 
     <main>
-      <section id="postsBody">
-        
-      </section>
+      <section id="postsBody"></section>
     </main>
 
     <footer></footer>

@@ -1,0 +1,57 @@
+### Step 1) Register or create new user
+POST http://microbloglite.us-east-2.elasticbeanstalk.com/api/users
+Content-Type: application/json
+
+{
+  "username": "amyers",
+  "fullName": "Amy Myers",
+  "password": "abc123"
+}
+
+### Step 2) Login
+POST http://microbloglite.us-east-2.elasticbeanstalk.com/auth/login
+Content-Type: application/json
+
+{
+  "username": "amyers",
+  "password": "abc123"
+}
+
+
+### Step 3a) GET User
+GET http://microbloglite.us-east-2.elasticbeanstalk.com/api/users/amyers
+Authorization: Bearer 
+
+### Step 3) GET Users
+GET http://microbloglite.us-east-2.elasticbeanstalk.com/api/users/?limit=10
+Authorization: Bearer 
+
+### Step 4) Add Post
+POST http://microbloglite.us-east-2.elasticbeanstalk.com/api/posts
+Content-Type: application/json
+Authorization: Bearer 
+
+{
+    "text": "I have a silly password"
+}
+
+### Step 5) GET Posts
+GET http://microbloglite.us-east-2.elasticbeanstalk.com/api/posts
+Content-Type: application/json
+Authorization: Bearer 
+
+### Step 6) DELETE Post
+DELETE http://microbloglite.us-east-2.elasticbeanstalk.com/api/posts 
+Content-Type: application/json
+Authorization:  Bearer  
+
+
+### Step 7) Update User
+PUT http://microbloglite.us-east-2.elasticbeanstalk.com/api/users/viccaroni
+Content-Type: application/json
+Authorization: Bearer 
+
+{
+  "fullName": "Victoria Hernandez",
+  "bio": "This is my life story 2"
+}

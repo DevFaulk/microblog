@@ -11,12 +11,11 @@ window.onload = function displayPosts() {
     headers: {
       Authorization: `Bearer ${logInData.token}`,
     },
-    body: JSON.stringify(posts),
   })
     .then((response) => response.json())
     .then((data) => {
       console.log(data);
-      generateBootstrapCard(data);
+      generatePostCard(data);
     });
 };
 
@@ -25,30 +24,28 @@ function getLoginData() {
   return JSON.parse(loginJSON) || {};
 }
 
-function generateBootstrapCard(data) {
+function generatePostCard(data) {
   // Create card container
-  var card = document.createElement("div");
-  card.className = "card";
-
-  //Set card width
-  card.style.width = width + "rem";
+  let card = document.createElement("div");
+  card.className = "post-card";
 
   // Create card body
-  var postsBody = document.createElement("div");
+  let postsBody = document.createElement("div");
   postsBody.className = "card-body";
+  postsBody.textContent = ""
 
   // Create card profile stuff
-  var cardTitle = document.createElement("h5");
+  let cardTitle = document.createElement("h5");
   cardTitle.className = "card-title";
   cardTitle.textContent = title;
 
   // Create card message body
-  var cardSubtitle = document.createElement("h6");
+  let cardSubtitle = document.createElement("h6");
   cardSubtitle.className = "card-subtitle mb-2 text-muted";
   cardSubtitle.textContent = subtitle;
 
   // Create card content
-  var cardContent = document.createElement("p");
+  let cardContent = document.createElement("p");
   cardContent.className = "card-text";
   cardContent.textContent = content;
 
