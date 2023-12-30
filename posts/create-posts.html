@@ -18,11 +18,13 @@
 
 
     <!-- Run BEFORE page is finished loading (before window.onload): -->
+    <script src="../account/auth.js"></script>
     <script>
       if (isLoggedIn() === false) {
         window.location.replace("../account/login.html");
       }
     </script>
+
   </head>
   <body>
     <header>
@@ -50,7 +52,7 @@
     <footer></footer>
 
     <!-- Page-specific code -->
-    <script src="/account/auth.js"></script>
+    
     <script src="create-posts.js"></script>
   </body>
 </html>
