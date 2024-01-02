@@ -24,12 +24,36 @@
   </head>
   <body>
     <header>
-      <h1>View Posts</h1>
+      <div class="profile-logo-dropdown">
+        <img src="https://placehold.co/50x50" alt="profile logo" />
+        <div class="profile-dropdown-content">
+          <a href="../account/profile.html">Go to Profile</a>
+          <a id="loginLink" href="../account/login.html">Login</a>
+          <a href="../account/register.html">Register</a>
+        </div>
+      </div>
+      <div class="app-logo">
+        <a href="../index.html">
+          <img src="https://placehold.co/50x50" alt="app logo" />
+        </a>
+      </div>
+      <div class="settings-dropdown">
+        <i style="font-size: 24px" class="fa">&#xf013;</i>
+        <div class="settings-dropdown-content">
+          <div class="toggle-dark-mode">
+            <p id="toggleDarkMode">Dark Mode</p>
+            <i class="fa-solid fa-toggle-on"></i>
+          </div>
+        </div>
+      </div>
     </header>
 
     <main>
       <div class="post-card-content">
         <div class="post-card"></div>
+      </div>
+      <div class="create-post-button">
+        <i class="fa-regular fa-circle-xmark"></i>
       </div>
     </main>
     <!-- 
