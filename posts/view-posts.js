@@ -40,6 +40,7 @@ function loadAllPosts() {
         card.appendChild(heartButton);
         postCard.appendChild(card);
       }
+      console.log(posts);
     });
 }
 
