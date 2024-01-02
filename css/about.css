@@ -12,6 +12,7 @@ a {
 
   img {
     float: left;
+    border-radius: 5%;
   }
   .text {
 font-size: 20px;
