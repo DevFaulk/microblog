@@ -1,5 +1,10 @@
 "use strict";
 
+// Logged In Check
+if (isLoggedIn() === false) {
+  window.location.replace("../account/register.html");
+}
+
 const postButton = document.querySelector("#postButton");
 const postContent = document.querySelector("#postContent");
 
@@ -11,13 +16,13 @@ function formToPost() {
 }
 
 function addPost() {
-    const logInData = getLoginData();
-    const post = formToPost();
+  const logInData = getLoginData();
+  const post = formToPost();
   fetch("http://microbloglite.us-east-2.elasticbeanstalk.com/api/posts", {
     method: "POST",
     headers: {
       "Content-Type": "application/json",
-      "Authorization": `Bearer ${logInData.token}`
+      Authorization: `Bearer ${logInData.token}`,
     },
     body: JSON.stringify(post),
   }).then;

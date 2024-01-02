@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Login</title>
+    <title>Profile</title>
     <!-- External CSS -->
     <link
       rel="stylesheet"
@@ -15,7 +15,7 @@
     <!-- Global CSS (CSS rules you want applied to all pages) -->
     <link rel="stylesheet" href="/css/global.css" />
     <!-- Page-specific CSS -->
-    <link rel="stylesheet" href="login.css" />
+    <link rel="stylesheet" href="profile.css" />
     <!-- Head Scripts -->
     <script
       src="https://kit.fontawesome.com/34bff2d1b9.js"
@@ -26,44 +26,20 @@
     <header>
       <nav>
         <nav>
-          <strong>Login</strong>
-          <a href="register.html">register</a>
+          <strong>Posts</strong>
+          <a href="register.html">Log out</a>
           <a href="/index.html">Home</a>
         </nav>
       </nav>
     </header>
-
-    <main>
-      <h1>Login</h1>
-      <form id="login">
-        <div>
-          <label for="username">Username</label>
-          <input type="text" id="username" minlength="3" />
-        </div>
-
-        <div>
-          <label for="password">Password</label>
-          <input type="password" id="password" minlength="6" />
-        </div>
-
-        <button id="loginButton" type="submit">Login</button>
-      </form>
+    <main class="profile-page">
+      <h1>Profile</h1>
+      <div class="profile-info">
+        <div id="profilePicture"></div>
+        <div id="profileName"></div>
+      </div>
+      <div id="profilePosts"></div>
     </main>
-
-    <footer>
-      <ul>
-        <li>©2024 Hot Pot</li>
-      </ul>
-
-      <ul>
-        <li>About</li>
-        <li>More Info</li>
-        <li>Help</li>
-        <li>Questions</li>
-      </ul>
-    </footer>
-
-    <!-- Page-specific code -->
-    <script src="login.js"></script>
+    <script src="profile.js"></script>
   </body>
 </html>

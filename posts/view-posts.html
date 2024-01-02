@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>View Posts</title>
+    <!-- External CSS -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/@picocss/pico@1/css/pico.classless.min.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
+    <!-- Global CSS (CSS rules you want applied to all pages) -->
+    <link rel="stylesheet" href="css/global.css" />
+    <!-- Page-specific CSS -->
+    <link rel="stylesheet" href="view-posts.css" />
+    <!-- Head Scripts -->
+    <script
+      src="https://kit.fontawesome.com/34bff2d1b9.js"
+      crossorigin="anonymous"></script>
+    <script src="/account/auth.js"></script>
+    <script src="https://code.jquery.com/jquery-3.4.1.js"></script>
+  </head>
+  <body>
+    <header>
+      <h1>View Posts</h1>
+    </header>
+
+    <main>
+      <div class="post-card-content">
+        <div class="post-card"></div>
+      </div>
+    </main>
+
+    <div class="heart-button">
+      <div class="content">
+        <span class="heart"></span>
+        <span class="text">Like</span>
+        <span class="numb"></span>
+      </div>
+    </div>
+
+    <script>
+      $(document).ready(function () {
+        $(".content").click(function () {
+          $(".content").toggleClass("heart-active");
+          $(".text").toggleClass("heart-active");
+          $(".numb").toggleClass("heart-active");
+          $(".heart").toggleClass("heart-active");
+        });
+      });
+    </script>
+
+    <footer></footer>
+    <script src="view-posts.js"></script>
+  </body>
+</html>
