@@ -5,10 +5,13 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Login to the Microblog Network!</title>
-    <!-- Pico CSS -->
+    <!-- External CSS -->
     <link
       rel="stylesheet"
       href="https://cdn.jsdelivr.net/npm/@picocss/pico@1/css/pico.classless.min.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
     <!-- Global CSS (CSS rules you want applied to all pages) -->
     <link rel="stylesheet" href="css/global.css" />
     <!-- Page-specific CSS -->
@@ -16,11 +19,25 @@
   </head>
   <body>
     <header>
-      <nav>
-        <strong>Home</strong>
-        <a id="loginLink" href="account/login.html">Login</a>
-        <a href="account/register.html">Register</a>
-      </nav>
+      <div class="profile-logo-dropdown">
+        <img src="https://placehold.co/50x50" alt="profile logo" />
+        <div class="dropdown-content">
+          <a href="account/profile.html">Go to Profile</a>
+          <a id="loginLink" href="account/login.html">Login</a>
+          <a href="account/register.html">Register</a>
+        </div>
+      </div>
+      <div class="app-logo">
+        <img src="https://placehold.co/50x50" alt="app logo" />
+      </div>
+      <div class="settings-dropdown">
+        <i style="font-size: 24px" class="fa">&#xf013;</i>
+        <div class="dropdown-content">
+          <div id="toggleDarkMode">
+            <p id="toggleDarkMode">Light Mode</p>
+          </div>
+        </div>
+      </div>
     </header>
 
     <main>
