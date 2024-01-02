@@ -22,7 +22,7 @@
 }
 .heart{
   display: flex;
-  background: url("img.png") no-repeat;
+  background: url("/images/like-img.png") no-repeat;
   
   /* background-size: 2900%; */
   height: 90px;
