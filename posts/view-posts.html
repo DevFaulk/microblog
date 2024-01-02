@@ -52,10 +52,26 @@
       <div class="post-card-content">
         <div class="post-card"></div>
       </div>
-      <div class="create-post-button">
+      <!-- <div class="create-post-button">
         <a href="../posts/create-posts.html">
           <i class="fa-regular fa-circle-xmark fa-2x"></i>
         </a>
+      </div> -->
+      <div class="create-post-button">
+        <i class="fa-regular fa-circle-xmark fa-2x"></i>
+      </div>
+
+      <div class="create-post-modal" id="createPostModal">
+        <div class="create-post-modal-content">
+          <form method="dialog">
+            <h1>Create a Post</h1>
+
+            <label for="postContent">Post Content:</label>
+            <input type="text" id="postContent" />
+
+            <button id="postButton" type="submit">Create Post</button>
+          </form>
+        </div>
       </div>
     </main>
     <!-- 
@@ -89,6 +105,7 @@
         <li><a href="/contact.html">Contact</a></li>
       </ul>
     </footer>
+    <script src="create-posts.js"></script>
     <script src="view-posts.js"></script>
   </body>
 </html>

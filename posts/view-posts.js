@@ -1,5 +1,6 @@
-// ! Unfinished
 "use strict";
+
+// Auth scripts
 
 // Logged In Check
 if (isLoggedIn() === false) {
@@ -12,6 +13,16 @@ if (isLoggedIn() === true) {
   loginLink.innerText = "Logout";
   loginLink.setAttribute("onclick", "logout()");
 }
+
+// Create post modal scripts
+
+let createPostButton = document.querySelector(".create-post-button");
+let createPostModal = document.getElementById("createPostModal");
+createPostButton.onclick = function () {
+  createPostModal.style.display = "block";
+};
+
+// Post card scripts
 
 const postCard = document.querySelector(".post-card");
 
