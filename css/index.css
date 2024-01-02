@@ -1,6 +1,141 @@
-.header {
-    display: flex;
-    justify-content: space-between;
+/* Elements */
+body {
+  height: 100%;
+  width: 100vw;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  height: 1024px;
+}
+
+footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-block: 12px !important;
+}
+
+/* Sections */
+
+/* Post Section */
+.post-section {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  flex-grow: 2;
+  margin-bottom: 48px;
+}
+
+.post-header {
+  position: absolute;
+  font-size: 1.5rem;
+  top: 30%;
+  z-index: 1;
+}
+
+.post-img {
+  position: absolute;
+  z-index: -1;
+  height: 100%;
+  width: 100%;
+  background-image: url("https://placehold.co/800x200");
+  border-radius: 4px;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+/* Explore Section */
+
+.explore-section {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  flex-grow: 2;
+  margin-bottom: 48px;
+}
+
+.explore-header {
+  position: absolute;
+  font-size: 1.5rem;
+  top: 30%;
+  z-index: 1;
+}
+
+.explore-img {
+  position: absolute;
+  z-index: -1;
+  height: 100%;
+  width: 100%;
+  background-image: url("https://placehold.co/800x200");
+  border-radius: 4px;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+/* About-FAQ Section */
+
+.about-faq-section {
+  display: flex;
+  justify-content: space-between;
+  flex-grow: 1;
+  margin-bottom: 48px;
+}
+/* About Us Sub-Section */
+
+.about-faq-section > .about-us {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  flex-grow: 1;
+  margin-right: 20px;
+}
+.about-faq-section > .about-us > .about-us-header {
+  position: absolute;
+  font-size: 1.5rem;
+  top: 30%;
+  z-index: 1;
+}
+.about-faq-section > .about-us > .about-us-img {
+  position: absolute;
+  z-index: -1;
+  height: 100%;
+  width: 100%;
+  background-image: url("https://placehold.co/400x200");
+  border-radius: 4px;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+/* FAQ Sub-Section */
+
+.about-faq-section > .faq {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  flex-grow: 1;
+  margin-left: 20px;
+}
+
+.about-faq-section > .faq > .faq-header {
+  position: absolute;
+  font-size: 1.5rem;
+  top: 30%;
+  z-index: 1;
+}
+
+.about-faq-section > .faq > .faq-img {
+  position: absolute;
+  z-index: -1;
+  height: 100%;
+  width: 100%;
+  background-image: url("https://placehold.co/400x200");
+  border-radius: 4px;
+  background-size: cover;
+  background-repeat: no-repeat;
 }
 
 /* Dropdowns */
@@ -15,7 +150,7 @@
 }
 
 .profile-dropdown-content {
-    flex-direction: column;
+  flex-direction: column;
 }
 
 .settings-dropdown-content {
@@ -45,13 +180,13 @@
   padding: 4px;
 }
 
-.fa-toggle-on, .fa-toggle-off {
-padding-inline: 2px;
-width: 5px;
-height: 5px;
+.fa-toggle-on,
+.fa-toggle-off {
+  padding-inline: 2px;
+  width: 5px;
+  height: 5px;
 }
 
-#toggleDarkMode{
-    display: flex;
+#toggleDarkMode {
+  display: flex;
 }
-
