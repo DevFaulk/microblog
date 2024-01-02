@@ -19,27 +19,28 @@ function loadAllPosts() {
   })
     .then((response) => response.json())
     .then((posts) => {
-      for (let post of posts) {
-        let card = document.createElement("div");
-        card.className = "user-post";
+      // for (let post of posts) {
+      //   let card = document.createElement("div");
+      //   card.className = "user-post";
 
-        let username = document.createElement("h3");
-        username.innerText = post.username;
+      //   let username = document.createElement("h3");
+      //   username.innerText = post.username;
         
 
-        let postCardContent = document.createElement("p");
-        postCardContent.innerText = post.text;
-        postCardContent.className = "post-content"
+      //   let postCardContent = document.createElement("p");
+      //   postCardContent.innerText = post.text;
+      //   postCardContent.className = "post-content"
 
-        let heartButton = document.createElement("button");
-        heartButton.className= "like-button";
-        heartButton.innerText= "Like";
+      //   let heartButton = document.createElement("button");
+      //   heartButton.className= "like-button";
+      //   heartButton.innerText= "Like";
 
-        card.appendChild(username);
-        card.appendChild(postCardContent);
-        card.appendChild(heartButton);
-        postCard.appendChild(card);
-      }
+      //   card.appendChild(username);
+      //   card.appendChild(postCardContent);
+      //   card.appendChild(heartButton);
+      //   postCard.appendChild(card);
+      // }
+      console.log(posts);
     });
 }
 
