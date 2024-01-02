@@ -14,9 +14,13 @@ input[type=text] {
   input:not([type=checkbox],[type=radio]), select, textarea {
     width: 50%;
   }
-  
+
 button{
     display: inline;
     width: 50%;
     margin-top: 3%;
+}
+
+h1{
+    text-align: center;
 }
