@@ -1,8 +1,25 @@
 form {
-    max-width: 8rem;
+    /* max-width: 8rem;
     display: flex;
     flex-direction: column;
-    gap: 0.7rem;
+    gap: 0.7rem; */
+
+
+    text-align: center;
+
+}
+
+input[type=text] {
+    width: 50%;
+    padding: 12px 20px 12px 20px;
+    margin: 8px 0;
+    box-sizing: border-box;
+  }
+
+button{
+    display: inline;
+    width: 50%;
+    margin-top: 3%;
 }
 
 h2 {
