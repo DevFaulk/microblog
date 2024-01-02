@@ -1,9 +1,13 @@
 @import url('https://fonts.googleapis.com/css?family=Montserrat:600&display=swap');
+.user-post{
+  display: flex;
+  flex-direction: column;
+}
+
 .heart-button{
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%,-50%);
+ 
+ 
+  /* transform: translate(-50%,-50%); */
 }
 .content{
   padding: 13px 16px;
@@ -17,15 +21,13 @@
   background: #fbd0d8;
 }
 .heart{
-  position: absolute;
+  display: flex;
   background: url("img.png") no-repeat;
-  background-position: left;
-  background-size: 2900%;
+  
+  /* background-size: 2900%; */
   height: 90px;
   width: 90px;
-  top: 50%;
-  left: 21%;
-  transform: translate(-50%,-50%);
+  /* transform: translate(-50%,-50%); */
 }
 .text{
   font-size: 21px;

@@ -7,8 +7,8 @@ if (isLoggedIn() === false) {
 }
 
 const postCard = document.querySelector(".post-card");
-// const likeButton = document.querySelector("#like-button");
-const heartButton = document.querySelector("#heart-button")
+
+
 
 function loadAllPosts() {
   const loginData = getLoginData();
@@ -25,19 +25,30 @@ function loadAllPosts() {
 
         let username = document.createElement("h3");
         username.innerText = post.username;
-        
 
         let postCardContent = document.createElement("p");
         postCardContent.innerText = post.text;
-        postCardContent.className = "post-content"
+        postCardContent.className = "post-content";
 
-        let heartButton = document.createElement("button");
-        heartButton.className= "like-button";
-        heartButton.innerText= "Like";
+        let heartDiv = document.createElement("div");
+        heartDiv.className = "heart-button";
+        let likeContent = document.createElement("div");
+        likeContent.className = "content";
+        let heartButton = document.createElement("span");
+        heartButton.className = "heart";
+        let likeText = document.createElement("span");
+        likeText.className = "text";
+        likeText.innerText = "Like";
+        let likeNumb = document.createElement("span");
+        likeNumb.className = "numb";
 
         card.appendChild(username);
         card.appendChild(postCardContent);
-        card.appendChild(heartButton);
+        card.appendChild(heartDiv);
+        heartDiv.appendChild(likeContent);
+        likeContent.appendChild(heartButton);
+        likeContent.appendChild(likeText);
+        likeContent.appendChild(likeNumb);
         postCard.appendChild(card);
       }
       console.log(posts);
