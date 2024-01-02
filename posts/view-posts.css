@@ -127,14 +127,43 @@ p {
 
 /* Modal */
 
-.create-post-modal .create-post-modal-content {
-  display: none;
+.create-post-modal {
+  display: block;
+  position: fixed;
+  z-index: 1;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgb(0, 0, 0);
+  background-color: rgba(0, 0, 0, 0.4);
+}
+.create-post-modal-content {
+  padding: 2rem;
   position: fixed;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
   height: 40%;
   width: 50%;
-  background-color: rgb(0, 0, 0);
-  background-color: rgba(255, 255, 255, 0.4);
+  background-color: #18242d;
+  border-radius: 8px;
+  filter: drop-shadow(1px 1px 8px rgba(0, 0, 0, 0.459));
+}
+
+.close {
+  position: absolute;
+  top: 0%;
+  left: 90%;
+  padding: 0.5rem;
+  color: #aaa;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  color: black;
+  text-decoration: none;
+  cursor: pointer;
 }

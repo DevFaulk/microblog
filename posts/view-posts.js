@@ -18,8 +18,12 @@ if (isLoggedIn() === true) {
 
 let createPostButton = document.querySelector(".create-post-button");
 let createPostModal = document.getElementById("createPostModal");
+let closeModal = document.querySelector(".close");
 createPostButton.onclick = function () {
   createPostModal.style.display = "block";
+};
+closeModal.onclick = function () {
+  createPostModal.style.display = "none";
 };
 
 // Post card scripts
