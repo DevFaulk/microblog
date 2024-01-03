@@ -17,6 +17,11 @@
   font-size: 1rem;
 }
 
+body {
+  background-color: #ffe8f5;
+  color: #9000ff;
+}
+
 /* Navbar */
 
 header {
