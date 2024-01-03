@@ -6,20 +6,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Profile</title>
     <!-- External CSS -->
-    <link
-      rel="stylesheet"
-      href="https://cdn.jsdelivr.net/npm/@picocss/pico@1/css/pico.classless.min.css" />
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@picocss/pico@1/css/pico.classless.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
     <!-- Global CSS (CSS rules you want applied to all pages) -->
     <link rel="stylesheet" href="/css/global.css" />
     <!-- Page-specific CSS -->
     <link rel="stylesheet" href="profile.css" />
     <!-- Head Scripts -->
-    <script
-      src="https://kit.fontawesome.com/34bff2d1b9.js"
-      crossorigin="anonymous"></script>
+    <script src="https://kit.fontawesome.com/34bff2d1b9.js" crossorigin="anonymous"></script>
     <script src="auth.js"></script>
   </head>
   <body>
@@ -33,17 +27,42 @@
       </nav>
     </header>
     <main class="profile-page">
-      <h1>Profile</h1>
-      <div class="profile-info">
-        <div id="profilePicture"></div>
-        <div id="profileName"></div>
+      <h2 style="text-align: center">Profile</h2>
+
+      <div class="grid">
+        <img
+          src="images/Black Simple Bold Professional Twitter Profile Picture (4).png"
+          alt="IMAGE HERE"
+          style="width: 20rem"
+        />
+
+        <p class="Avatar" h2>Change Avatar</p>
+
+        <div style="margin: 20px 0">
+          <a href="#"><i class="fa fa-comments-o"></i></a>
+
+          <div>
+            <p>Name</p>
+            <label for="name">Name</label>
+            <input type="name" id="name" name="name" style="height: 50px; width: 20rem" placeholder="Name" required />
+          </div>
+
+          <label for="email">Email</label>
+          <input
+            type="email"
+            id="email"
+            name="email"
+            style="height: 50px; width: 20rem"
+            placeholder="Email address"
+            required
+          />
+        </div>
+
+        <div><button>Submit</button></div>
       </div>
-      <div id="profilePosts"></div>
     </main>
     <footer>
-      <ul>
-        <li>©2024 Hot Pot</li>
-      </ul>
+      <li>©2024 Hot Pot</li>
 
       <ul>
         <li><a href="/about.html">About</a></li>
