@@ -6,21 +6,28 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Login</title>
     <!-- External CSS -->
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@picocss/pico@1/css/pico.classless.min.css" />
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" />
     <!-- Global CSS (CSS rules you want applied to all pages) -->
-    <link rel="stylesheet" href="/css/global.css" />
+    <link rel="stylesheet" href="css/global.css" />
     <!-- Page-specific CSS -->
-    <link rel="stylesheet" href="login.css" />
+    <link rel="stylesheet" href="css/login.css" />
     <!-- Head Scripts -->
-    <script src="https://kit.fontawesome.com/34bff2d1b9.js" crossorigin="anonymous"></script>
-    <script src="auth.js"></script>
-    <style>
-      a {
-        margin-right: 1%;
-        margin-left: 2rem;
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="/account/auth.js"></script>
+    <script>
+      if (isLoggedIn() === false) {
+        window.location.replace("../account/login.html");
       }
-    </style>
+    </script>
+    <script
+      src="https://kit.fontawesome.com/34bff2d1b9.js"
+      crossorigin="anonymous"></script>
   </head>
   <body>
     <header>

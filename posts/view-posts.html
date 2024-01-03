@@ -7,30 +7,35 @@
     <!-- External CSS -->
     <link
       rel="stylesheet"
-      href="https://cdn.jsdelivr.net/npm/@picocss/pico@1/css/pico.classless.min.css" />
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
     <link
       rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" />
     <!-- Global CSS (CSS rules you want applied to all pages) -->
-    <link rel="stylesheet" href="../css/global.css" />
+    <link rel="stylesheet" href="/css/global.css" />
     <!-- Page-specific CSS -->
     <link rel="stylesheet" href="view-posts.css" />
     <!-- Head Scripts -->
-    <script
-      src="https://kit.fontawesome.com/34bff2d1b9.js"
-      crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <script src="/account/auth.js"></script>
     <script>
       if (isLoggedIn() === false) {
         window.location.replace("../account/login.html");
       }
     </script>
-    <script src="https://code.jquery.com/jquery-3.4.1.js"></script>
+    <script
+      src="https://kit.fontawesome.com/34bff2d1b9.js"
+      crossorigin="anonymous"></script>
   </head>
   <body>
     <header>
       <div class="profile-logo-dropdown">
-        <img src="/images/Black Simple Bold Professional Twitter Profile Picture (7).png" alt="profile logo" width="110" height="110"/>
+        <img
+          src="/images/Black Simple Bold Professional Twitter Profile Picture (7).png"
+          alt="profile logo"
+          width="110"
+          height="110" />
         <div class="profile-dropdown-content">
           <a href="../account/profile.html">Go to Profile</a>
           <a id="loginLink" href="../account/login.html">Login</a>
@@ -39,7 +44,8 @@
       </div>
       <div class="app-logo">
         <a href="../index.html">
-          <img src="/images/The_Hot_Pot.png"" alt="app logo" width="120" height="120"/>
+          <img src="/images/The_Hot_Pot.png"" alt="app logo" width="120"
+          height="120"/>
         </a>
       </div>
       <div class="settings-dropdown">
@@ -48,11 +54,9 @@
           <div class="toggle-dark-mode">
             <p id="toggleDarkMode">Dark Mode</p>
             <i class="fa-solid fa-toggle-on"></i>
-           
           </div>
           <div class="help"><a href="questions.html">Help</a></div>
         </div>
-       
       </div>
     </header>
 
@@ -92,7 +96,7 @@
             <span class="text">Like</span>
             <span class="numb"></span>
           </div>
-        </div> -->  
+        </div> -->
 
     <script>
       $(document).ready(function () {
