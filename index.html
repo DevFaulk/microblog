@@ -18,6 +18,11 @@
     <link rel="stylesheet" href="css/index.css" />
     <!-- Head Scripts -->
     <script src="/account/auth.js"></script>
+    <script>
+      if (isLoggedIn() === false) {
+        window.location.replace("../account/login.html");
+      }
+    </script>
     <script
       src="https://kit.fontawesome.com/34bff2d1b9.js"
       crossorigin="anonymous"></script>
@@ -41,6 +46,7 @@
         <i style="font-size: 24px" class="fa">&#xf013;</i>
         <div class="settings-dropdown-content">
           <div class="toggle-dark-mode">
+            <div class="help"><a href="questions.html">Help</a></div>
             <p id="toggleDarkMode">Dark Mode</p>
             <i class="fa-solid fa-toggle-on"></i>
           </div>

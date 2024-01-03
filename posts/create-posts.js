@@ -1,9 +1,9 @@
 "use strict";
 
 // Logged In Check
-if (isLoggedIn() === false) {
-  window.location.replace("../account/register.html");
-}
+// if (isLoggedIn() === false) {
+//   window.location.replace("../account/register.html");
+// }
 
 const postButton = document.querySelector("#postButton");
 const postContent = document.querySelector("#postContent");
