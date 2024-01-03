@@ -1,9 +1,9 @@
 "use strict";
 
 // Logged In Check
-if (isLoggedIn() === false) {
-  window.location.replace("../account/register.html");
-}
+// if (isLoggedIn() === false) {
+//   // window.location.replace("../account/login.html");
+// }
 
 // Change Login to Logout if logged in
 let loginLink = document.getElementById("loginLink");
