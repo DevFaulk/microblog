@@ -1,8 +1,3 @@
-// Logged In Check
-if (isLoggedIn() === false) {
-  window.location.replace("../account/register.html");
-}
-
 // Modal Functionality
 
 let editProfile = document.getElementById("editProfile");
