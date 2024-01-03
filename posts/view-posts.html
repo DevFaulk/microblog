@@ -12,7 +12,7 @@
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
     <!-- Global CSS (CSS rules you want applied to all pages) -->
-    <link rel="stylesheet" href="css/global.css" />
+    <link rel="stylesheet" href="../css/global.css" />
     <!-- Page-specific CSS -->
     <link rel="stylesheet" href="view-posts.css" />
     <!-- Head Scripts -->
@@ -24,22 +24,67 @@
   </head>
   <body>
     <header>
-      <h1>View Posts</h1>
+      <div class="profile-logo-dropdown">
+        <img src="https://placehold.co/50x50" alt="profile logo" />
+        <div class="profile-dropdown-content">
+          <a href="../account/profile.html">Go to Profile</a>
+          <a id="loginLink" href="../account/login.html">Login</a>
+          <a href="../account/register.html">Register</a>
+        </div>
+      </div>
+      <div class="app-logo">
+        <a href="../index.html">
+          <img src="https://placehold.co/50x50" alt="app logo" />
+        </a>
+      </div>
+      <div class="settings-dropdown">
+        <i style="font-size: 24px" class="fa">&#xf013;</i>
+        <div class="settings-dropdown-content">
+          <div class="toggle-dark-mode">
+            <p id="toggleDarkMode">Dark Mode</p>
+            <i class="fa-solid fa-toggle-on"></i>
+          </div>
+        </div>
+      </div>
     </header>
 
     <main>
       <div class="post-card-content">
         <div class="post-card"></div>
       </div>
-    </main>
+      <!-- <div class="create-post-button">
+        <a href="../posts/create-posts.html">
+          <i class="fa-regular fa-circle-xmark fa-2x"></i>
+        </a>
+      </div> -->
+      <div class="create-post-button">
+        <i class="fa-regular fa-circle-xmark fa-2x"></i>
+      </div>
 
+      <div class="create-post-modal" id="createPostModal">
+        <div class="create-post-modal-content">
+          <form name="create-post" method="dialog">
+            <h1>Create a Post</h1>
+            <span class="close">&times;</span>
+
+            <input
+              type="text"
+              placeholder="Type something funny!"
+              id="postContent" />
+
+            <button id="postButton" type="submit">Create Post</button>
+          </form>
+        </div>
+      </div>
+    </main>
+    <!-- 
     <div class="heart-button">
       <div class="content">
         <span class="heart"></span>
         <span class="text">Like</span>
         <span class="numb"></span>
       </div>
-    </div>
+    </div> -->
 
     <script>
       $(document).ready(function () {
@@ -52,7 +97,18 @@
       });
     </script>
 
-    <footer></footer>
+    <footer>
+      <ul>
+        <li>©2024 Hot Pot</li>
+      </ul>
+
+      <ul>
+        <li><a href="/about.html">About</a></li>
+        <li><a href="/faq.html">FAQ</a></li>
+        <li><a href="/contact.html">Contact</a></li>
+      </ul>
+    </footer>
+    <script src="create-posts.js"></script>
     <script src="view-posts.js"></script>
   </body>
 </html>
