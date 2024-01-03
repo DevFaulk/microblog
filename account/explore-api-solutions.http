@@ -23,7 +23,7 @@ GET http://microbloglite.us-east-2.elasticbeanstalk.com/api/users/amyers
 Authorization: Bearer 
 
 ### Step 3) GET Users
-GET http://microbloglite.us-east-2.elasticbeanstalk.com/api/users/?limit=10
+GET http://microbloglite.us-east-2.elasticbeanstalk.com/api/users
 Authorization: Bearer 
 
 ### Step 4) Add Post

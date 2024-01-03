@@ -2,11 +2,6 @@
 
 "use strict";
 
-// Logged In Check
-if (isLoggedIn() === true) {
-  window.location.replace("../index.html");
-}
-
 const loginForm = document.querySelector("#login");
 
 loginForm.onsubmit = function (event) {
