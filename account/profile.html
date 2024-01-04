@@ -78,7 +78,7 @@
       </nav>
     </header>
     <main class="profile-page">
-      <h2 style="text-align: center">Profile</h2>
+     
       <div class="row py-5 px-4">
         <div class="col-md-5 mx-auto">
           <!-- Profile widget -->
@@ -90,12 +90,19 @@
                     src="https://images.unsplash.com/photo-1522075469751-3a6694fb2f61?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=80"
                     alt="..."
                     width="130"
-                    class="rounded mb-2 img-thumbnail"
-                  /><a href="#" class="btn btn-outline-dark btn-sm btn-block" id="editProfile">Edit profile</a>
+                    class="rounded mb-2 img-thumbnail" /><a
+                    href="#"
+                    class="btn btn-outline-light btn-sm btn-block"
+                    style="margin-left: 2%;"
+                    id="editProfile"
+                    >Edit profile</a
+                  >
                 </div>
-                <div class="media-body mb-5 text-white">
-                  <h4 class="mt-0 mb-0" id="userNameHeading"></h4>
-                  <p class="small mb-4"><i class="fas fa-map-marker-alt mr-2"></i>New York</p>
+                <div class="media-body mb-5 text-white">  
+                  <h4 class="mt0- mb-0"></h4>
+                  <p class="small mb-0">
+                 
+                  </p>
                 </div>
               </div>
             </div>
@@ -118,9 +125,9 @@
             <div class="px-4 py-3">
               <h5 class="mb-0">About</h5>
               <div class="p-4 rounded shadow-sm bg-light">
-                <p class="font-italic mb-0">Web Developer</p>
-                <p class="font-italic mb-0">Lives in New York</p>
-                <p class="font-italic mb-0">Photographer</p>
+                <p class="font-italic mb-0">Occupation:</p>
+                <p class="font-italic mb-0">Hobbies:</p>
+                <p class="font-italic mb-0">Famous Feasts:</p>
               </div>
             </div>
             <div class="py-4 px-4">
@@ -169,15 +176,15 @@
             <span class="close">&times;</span>
 
             <img
-              src="/images/Black Simple Bold Professional Twitter Profile Picture (4).png"
+              src="/images/default Deli.jpg"
               alt="IMAGE HERE"
-              style="width: 20rem"
-            />
+              class="rounded mb-2 img-thumbnail" /><a
+              style="width: 20rem">
 
             <p class="Avatar" h2>Change Avatar</p>
 
             <div style="margin: 20px 0">
-              <a href="#"><i class="fa fa-comments-o"></i></a>
+         
 
               <div class="name-input">
                 <label for="name">Name</label>
@@ -187,9 +194,20 @@
                   name="name"
                   style="height: 50px; width: 20rem"
                   placeholder="Name"
-                  required
-                />
+                  required />
               </div>
+
+              <div class="bio-input">
+                <label for="name">Bio</label>
+                <input
+                  type="bio"
+                  id="bio"
+                  name="bio"
+                  style="height: 50px; width: 20rem"
+                  placeholder="10 characters or less"
+                  required />
+              </div>
+
               <div class="email-input">
                 <label for="email">Email</label>
                 <input
@@ -204,7 +222,9 @@
             </div>
 
             <div class="btn">
-              <button id="cancel" type="reset" class="btn btn-primary">Cancel</button>
+              <button id="cancel" type="reset"  style="margin-bottom: 2%;"   class="btn btn-primary">   
+                Cancel
+              </button>
               <button type="submit" class="btn btn-primary">Confirm</button>
             </div>
           </form>
