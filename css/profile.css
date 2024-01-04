@@ -110,7 +110,7 @@ body {
   top: 25%;
   left: 50%;
   transform: translate(-50%, -50%);
-  height: 750px;
+  height: fit-content;
   width: 50%;
   text-align: center;
   background-color: #edf4fa4f;
@@ -119,9 +119,8 @@ body {
   backdrop-filter: blur(6px);
 }
 
-.name-input {
-  margin-bottom: 1rem;
-}
+
+
 
 .close {
   position: absolute;
