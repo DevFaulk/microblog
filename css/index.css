@@ -43,33 +43,7 @@ main {
   background-size: cover;
   background-repeat: no-repeat;
 }
-/* Explore Section */
 
-.explore-section {
-  position: relative;
-  display: flex;
-  justify-content: center;
-  flex-grow: 2;
-  margin-bottom: 48px;
-}
-
-.explore-header {
-  position: absolute;
-  font-size: 1.5rem;
-  top: 30%;
-  z-index: 1;
-}
-
-.explore-img {
-  position: absolute;
-  z-index: -1;
-  height: 100%;
-  width: 100%;
-  background-image: url("/images/e5ce45dc8e7a6bb0d8742904e7cf3397.jpg");
-  border-radius: 4px;
-  background-size: cover;
-  background-repeat: no-repeat;
-}
 /* About-FAQ Section */
 
 .about-faq-section {
