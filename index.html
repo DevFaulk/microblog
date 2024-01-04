@@ -8,15 +8,26 @@
     <!-- External CSS -->
     <link
       rel="stylesheet"
-      href="https://cdn.jsdelivr.net/npm/@picocss/pico@1/css/pico.classless.min.css" />
-    <link
-      rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
+      crossorigin="anonymous" />
     <!-- Global CSS (CSS rules you want applied to all pages) -->
-    <link rel="stylesheet" href="css/global.css" />
+    <link rel="stylesheet" href="/css/global.css" />
     <!-- Page-specific CSS -->
-    <link rel="stylesheet" href="css/index.css" />
+    <link rel="stylesheet" href="/css/index.css" />
     <!-- Head Scripts -->
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"
+      integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+      crossorigin="anonymous"></script>
     <script src="/account/auth.js"></script>
     <script>
       if (isLoggedIn() === false) {
@@ -28,71 +39,83 @@
       crossorigin="anonymous"></script>
   </head>
   <body>
-    <header>
-      <div class="profile-logo-dropdown">
-        <img src="/images/Black Simple Bold Professional Twitter Profile Picture (7).png" alt="profile logo" width="110" height="110"/>
-        <div class="profile-dropdown-content">
-          <a href="account/profile.html">Go to Profile</a>
-          <a id="loginLink" href="account/login.html">Login</a>
-          <a href="account/register.html">Register</a>
+    <header class="shadow-sm">
+      <nav class="p-3">
+        <div id="profileLogo" class="profile-logo-dropdown">
+          <span id="profileOverText" style="display: none">Profile</span>
+          <div class="profile-dropdown-content">
+            <a href="account/profile.html">Go to Profile</a>
+            <a id="loginLink" href="account/login.html">Login</a>
+            <a href="account/register.html">Register</a>
+          </div>
+          <img
+            src="/images/Black Simple Bold Professional Twitter Profile Picture (7).png"
+            alt="profile logo"
+            class="navbar-logo" />
         </div>
-      </div>
-      <div class="app-logo">
-        <a href="../index.html">
-          <img src="/images/The_Hot_Pot.png"" alt="app logo" width="120" height="120"/>
-        </a>
-      </div>
-      <div class="settings-dropdown">
-        <i style="font-size: 24px" class="fa">&#xf013;</i>
-        <div class="settings-dropdown-content">
-          <div class="toggle-dark-mode">
-            <div class="help"><a href="questions.html">Help</a></div>
-            <p id="toggleDarkMode">Dark Mode</p>
-            <i class="fa-solid fa-toggle-on"></i>
+        <div id="appLogo" class="app-logo">
+          <a class="home-link" href="../index.html">
+            <span
+              id="homeHoverText"
+              style="display: none; transition: 0.1s ease"
+              >Home</span
+            >
+            <img
+              src="/images/The_Hot_Pot.png"
+              alt="app logo"
+              class="navbar-logo" />
+          </a>
+        </div>
+        <div class="settings-dropdown">
+          <i style="font-size: 36px" class="fa">&#xf013;</i>
+          <div class="settings-dropdown-content">
+            <div class="toggle-dark-mode">
+              <p id="toggleDarkMode">Dark Mode</p>
+              <i class="fa-solid fa-toggle-on"></i>
+            </div>
+            <a href="questions.html">Help</a>
           </div>
         </div>
-      </div>
+      </nav>
     </header>
 
-    <main>
-      <section class="post-section">
-        <div class="post-img"></div>
-        <div class="post-header section-header">
-          <a href="/posts/view-posts.html">View Posts</a>
+    <main class="container">
+      <div class="user-posts"></div>
+      <div class="create-post-button">
+        <i class="fa-regular fa-circle-xmark fa-2x"></i>
+      </div>
+
+      <div class="create-post-modal" id="createPostModal">
+        <div class="create-post-modal-content">
+          <form name="create-post" method="dialog">
+            <h1>Create a Post</h1>
+            <span class="close">&times;</span>
+
+            <input
+              type="text"
+              placeholder="Type something funny!"
+              id="postContent" />
+
+            <button id="postButton" type="submit">Create Post</button>
+          </form>
         </div>
-      </section>
-      <section class="explore-section">
-        <div class="explore-img"></div>
-        <div class="explore-header section-header">
-          <a href="/explore.html">Explore</a>
-        </div>
-      </section>
-      <section class="about-faq-section">
-        <div class="about-us">
-          <div class="about-us-img"></div>
-          <div class="about-us-header">
-            <a href="/about.html">About Us</a>
-          </div>
-        </div>
-        <div class="faq">
-          <div class="faq-img"></div>
-          <div class="faq-header">
-            <a href="/questions.html">FAQ</a>
-          </div>
-        </div>
-      </section>
+      </div>
     </main>
 
     <footer>
       <ul>
-        <li>©2024 Melting Pot</li>
+        <li>©2024 Hot Pot</li>
       </ul>
 
       <ul>
+        <li><a href="/about.html">About</a></li>
+        <li><a href="/faq.html">FAQ</a></li>
         <li><a href="/contact.html">Contact</a></li>
       </ul>
     </footer>
 
+    <script src="/posts/create-posts.js"></script>
+    <script src="/posts/view-posts.js"></script>
     <script src="index.js"></script>
   </body>
 </html>

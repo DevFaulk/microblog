@@ -7,15 +7,30 @@
     <!-- External CSS -->
     <link
       rel="stylesheet"
-      href="https://cdn.jsdelivr.net/npm/@picocss/pico@1/css/pico.classless.min.css" />
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
     <link
       rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" />
     <!-- Global CSS (CSS rules you want applied to all pages) -->
-    <link rel="stylesheet" href="css/global.css" />
+    <link rel="stylesheet" href="/css/global.css" />
     <!-- Page-specific CSS -->
     <link rel="stylesheet" href="css/about.css" />
     <!-- Head Scripts -->
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"
+      integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+      crossorigin="anonymous"></script>
+    <script src="/account/auth.js"></script>
+    <script>
+      if (isLoggedIn() === false) {
+        window.location.replace("../account/login.html");
+      }
+    </script>
     <script
       src="https://kit.fontawesome.com/34bff2d1b9.js"
       crossorigin="anonymous"></script>
@@ -36,7 +51,7 @@
       <!-- <h1>"e pluribus unum"</h1> -->
       <p>
         In a day and age where most find their own corner of the internet we
-        here at Hot Pot strive to bring all corners together.
+        here at the Melting Pot strive to bring all corners together.
       </p>
       <br />
       <div class="container">
@@ -44,34 +59,40 @@
         <div class="img">
           <img
             src="https://bringinganahome.files.wordpress.com/2017/08/e-pluribus-unum-quarter-dollar-bill-courtesy-of-shipov-olegshutterstockcom71923645.jpg"
-            width="700"
-            height="700" />
+            width="500"
+            height="300" />
         </div>
         <div class="text">
           <p>
             We stand for our communtiny made from every community. With every
             post you make and every comment you leave, you embed yourself deeper
             into the community. This is our vision. We welcome all with open
-            arms. You are apart of our Hot Pot family.
-            We stand for our communtiny made from every community. With every post you make and every comment you leave,
-            you embed yourself deeper into the community. This is our vision. We welcome all with open arms. You are
-            apart of our Melting Pot family.
+            arms. You are apart of our Melting Pot family.
           </p>
         </div>
       </div>
       <br />
+      <div class="container">
+        <h3>If you would like to donate</h3>
+      </div>
+      <div class="container">
+        <p>
+          We have our own charity that donates to at risk communities all over
+          the globe. We appreciate anything you can provide. Every dollar you
+          spend saves a life.
+        </p>
+      </div>
       <div class="containter">
-        <h1>What you can do</h1>
-        <p>Be thoughtful of others</p>
-        <p>Be inclusive towards others</p>
-        <p>Always treat eachothers like your family</p>
+        <a
+          href="https://www.redcross.org/donate/holiday-donations-help-where-its-needed-most.html/?cid=fy24holiday&med=cpc&source=google&scode=RSS00000E017&gad_source=1&gclid=CjwKCAiAqNSsBhAvEiwAn_tmxSwPjcejniydS-AoDuKl7sWLPSoHf1T_1osTdr4FiYbZWJlCsEA0TxoCehsQAvD_BwE&gclsrc=aw.ds"
+          >Our Go Fund me</a
+        >
       </div>
     </main>
     <footer>
       <ul>
         <li>©2024 Hot Pot</li>
       </ul>
-
       <ul>
         <li><a href="/about.html">About</a></li>
         <li><a href="/faq.html">FAQ</a></li>
