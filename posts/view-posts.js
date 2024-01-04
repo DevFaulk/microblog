@@ -2,7 +2,7 @@
 
 // Post card scripts
 
-let postCard = document.querySelector(".post-card");
+let userPosts = document.querySelector(".user-posts");
 
 function loadAllPosts() {
   const loginData = getLoginData();
@@ -13,17 +13,18 @@ function loadAllPosts() {
   })
     .then((response) => response.json())
     .then((posts) => {
-      postCard.innerHTML = "";
+      userPosts.innerHTML = "";
       for (let post of posts) {
         let card = document.createElement("div");
-        card.className = "user-post";
+        card.className = "user-post card";
 
-        let username = document.createElement("h3");
-        username.innerText = post.username;
+        let usersName = document.createElement("h3");
+        usersName.innerText = post.username;
+        usersName.className = "card-title"
 
-        let postCardContent = document.createElement("p");
-        postCardContent.innerText = post.text;
-        postCardContent.className = "post-content";
+        let usersMessage = document.createElement("p");
+        usersMessage.innerText = post.text;
+        usersMessage.className = "post-content card-text";
 
         let heartDiv = document.createElement("div");
         heartDiv.className = "heart-button";
@@ -37,14 +38,14 @@ function loadAllPosts() {
         let likeNumb = document.createElement("span");
         likeNumb.className = "numb";
 
-        card.appendChild(username);
-        card.appendChild(postCardContent);
+        card.appendChild(usersName);
+        card.appendChild(usersMessage);
         card.appendChild(heartDiv);
         heartDiv.appendChild(likeContent);
         likeContent.appendChild(heartButton);
         likeContent.appendChild(likeText);
         likeContent.appendChild(likeNumb);
-        postCard.appendChild(card);
+        userPosts.appendChild(card);
 
         likeContent.addEventListener("click", () => {
           likeContent.classList.toggle("heart-active");
