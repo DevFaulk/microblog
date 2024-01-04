@@ -32,6 +32,11 @@
       src="https://kit.fontawesome.com/34bff2d1b9.js"
       crossorigin="anonymous"></script>
     <script src="auth.js"></script>
+    <script>
+      if (isLoggedIn() === false) {
+        window.location.replace("../account/login.html");
+      }
+    </script>
   </head>
   <body>
     <header>
