@@ -29,6 +29,21 @@ p {
 
 /* Post Card Styles */
 
+.card-title {
+  font-size: 2rem;
+}
+
+.card-body {
+  font-size: 1.5rem;
+}
+
+/* Images */
+.post-img {
+  width: 450px;
+  height: 300px;
+  border-radius: 12px;
+}
+
 /*  Like Button Styles */
 /* ! unfinished */
 
@@ -53,7 +68,7 @@ p {
   height: 50px;
   width: 50px;
   background-size: 2900%;
-  background-position: 0
+  background-position: 0;
   /* transform: translate(-50%,-50%); */
 }
 .text {
