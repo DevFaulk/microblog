@@ -50,6 +50,12 @@ a:hover {
   transition: 100ms 25ms;
 }
 
+input {
+  padding: 12px 10px 12px 10px;
+  margin: 8px 0;
+  box-sizing: border-box;
+}
+
 /* Footer */
 footer {
   display: flex;

@@ -27,28 +27,36 @@
   <body>
     <header>
       <nav>
-        <nav>
-          <strong>Login</strong>
-          <a href="register.html">register</a>
-          <a href="/index.html">Home</a>
-        </nav>
+        <div class="register-link">
+          <a href="/account/register.html">Register</a>
+        </div>
+        <div class="settings-dropdown">
+          <i style="font-size: 24px" class="fa">&#xf013;</i>
+          <div class="settings-dropdown-content">
+            <div class="toggle-dark-mode">
+              <div class="help"><a href="questions.html">Help</a></div>
+              <p id="toggleDarkMode">Dark Mode</p>
+              <i class="fa-solid fa-toggle-on"></i>
+            </div>
+          </div>
+        </div>
       </nav>
     </header>
 
     <main>
-      <h1>Login</h1>
-      <form id="login">
-        <div>
+      <div class="page-header m-3">
+        <h1>User Login</h1>
+      </div>
+      <form class="card shadow p-5" id="login">
+        <div class="input">
           <label for="username">Username</label>
           <input type="text" id="username" minlength="3" />
-        </div>
 
-        <div>
           <label for="password">Password</label>
           <input type="password" id="password" minlength="6" />
         </div>
 
-        <button id="loginButton" type="submit">Login</button>
+        <button class="btn" id="loginButton" type="submit">Login</button>
       </form>
     </main>
 

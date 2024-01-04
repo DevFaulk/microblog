@@ -30,12 +30,6 @@ h2 {
 
 /* Registration Input */
 
-input[type="text"] {
-  padding: 12px 20px 12px 20px;
-  margin: 8px 0;
-  box-sizing: border-box;
-}
-
 .input {
   display: flex;
   flex-direction: column;
