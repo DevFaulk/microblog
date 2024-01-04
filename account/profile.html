@@ -6,14 +6,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Profile</title>
     <!-- External CSS -->
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
     <link
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
       rel="stylesheet"
       integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
-      crossorigin="anonymous" />
+      crossorigin="anonymous"
+    />
     <!-- Global CSS (CSS rules you want applied to all pages) -->
     <link rel="stylesheet" href="/css/global.css" />
     <!-- Page-specific CSS -->
@@ -23,24 +22,59 @@
       src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"
       integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g=="
       crossorigin="anonymous"
-      referrerpolicy="no-referrer"></script>
+      referrerpolicy="no-referrer"
+    ></script>
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
       integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
-      crossorigin="anonymous"></script>
-    <script
-      src="https://kit.fontawesome.com/34bff2d1b9.js"
-      crossorigin="anonymous"></script>
+      crossorigin="anonymous"
+    ></script>
+    <script src="https://kit.fontawesome.com/34bff2d1b9.js" crossorigin="anonymous"></script>
     <script src="auth.js"></script>
+    <script>
+      if (isLoggedIn() === false) {
+        window.location.replace("../account/login.html");
+      }
+    </script>
   </head>
   <body>
-    <header>
-      <nav>
-        <nav>
-          <a href="/posts/view-posts.html">Posts</a>
-          <a href="register.html">Log out</a>
-          <a href="/index.html">Home</a>
-        </nav>
+    <header class="shadow-sm">
+      <nav class="p-3">
+        <div id="profileLogo" class="profile-logo-dropdown">
+          <span id="profileOverText" style="display: none">Profile</span>
+          <div class="profile-dropdown-content">
+            <a href="account/profile.html">Go to Profile</a>
+            <a id="loginLink" href="account/login.html">Login</a>
+            <a href="account/register.html">Register</a>
+          </div>
+          <img
+            src="/images/Black Simple Bold Professional Twitter Profile Picture (7).png"
+            alt="profile logo"
+            class="navbar-logo" />
+        </div>
+        <div id="appLogo" class="app-logo">
+          <a class="home-link" href="../index.html">
+            <span
+              id="homeHoverText"
+              style="display: none; transition: 0.1s ease"
+              >Home</span
+            >
+            <img
+              src="/images/The_Hot_Pot.png"
+              alt="app logo"
+              class="navbar-logo" />
+          </a>
+        </div>
+        <div class="settings-dropdown">
+          <i style="font-size: 36px" class="fa">&#xf013;</i>
+          <div class="settings-dropdown-content">
+            <div class="toggle-dark-mode">
+              <p id="toggleDarkMode">Dark Mode</p>
+              <i class="fa-solid fa-toggle-on"></i>
+            </div>
+            <a href="questions.html">Help</a>
+          </div>
+        </div>
       </nav>
     </header>
     <main class="profile-page">
@@ -56,18 +90,12 @@
                     src="https://images.unsplash.com/photo-1522075469751-3a6694fb2f61?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=80"
                     alt="..."
                     width="130"
-                    class="rounded mb-2 img-thumbnail" /><a
-                    href="#"
-                    class="btn btn-outline-dark btn-sm btn-block"
-                    id="editProfile"
-                    >Edit profile</a
-                  >
+                    class="rounded mb-2 img-thumbnail"
+                  /><a href="#" class="btn btn-outline-dark btn-sm btn-block" id="editProfile">Edit profile</a>
                 </div>
                 <div class="media-body mb-5 text-white">
-                  <h4 class="mt-0 mb-0">Mark Williams</h4>
-                  <p class="small mb-4">
-                    <i class="fas fa-map-marker-alt mr-2"></i>New York
-                  </p>
+                  <h4 class="mt-0 mb-0" id="userNameHeading"></h4>
+                  <p class="small mb-4"><i class="fas fa-map-marker-alt mr-2"></i>New York</p>
                 </div>
               </div>
             </div>
@@ -75,21 +103,15 @@
               <ul class="list-inline mb-0">
                 <li class="list-inline-item">
                   <h5 class="font-weight-bold mb-0 d-block">215</h5>
-                  <small class="text-muted">
-                    <i class="fas fa-image mr-1"></i>Photos</small
-                  >
+                  <small class="text-muted"> <i class="fas fa-image mr-1"></i>Photos</small>
                 </li>
                 <li class="list-inline-item">
                   <h5 class="font-weight-bold mb-0 d-block">745</h5>
-                  <small class="text-muted">
-                    <i class="fas fa-user mr-1"></i>Followers</small
-                  >
+                  <small class="text-muted"> <i class="fas fa-user mr-1"></i>Followers</small>
                 </li>
                 <li class="list-inline-item">
                   <h5 class="font-weight-bold mb-0 d-block">340</h5>
-                  <small class="text-muted">
-                    <i class="fas fa-user mr-1"></i>Following</small
-                  >
+                  <small class="text-muted"> <i class="fas fa-user mr-1"></i>Following</small>
                 </li>
               </ul>
             </div>
@@ -102,8 +124,7 @@
               </div>
             </div>
             <div class="py-4 px-4">
-              <div
-                class="d-flex align-items-center justify-content-between mb-3">
+              <div class="d-flex align-items-center justify-content-between mb-3">
                 <h5 class="mb-0">Recent photos</h5>
                 <a href="#" class="btn btn-link text-muted">Show all</a>
               </div>
@@ -112,25 +133,29 @@
                   <img
                     src="https://images.unsplash.com/photo-1469594292607-7bd90f8d3ba4?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=750&q=80"
                     alt=""
-                    class="img-fluid rounded shadow-sm" />
+                    class="img-fluid rounded shadow-sm"
+                  />
                 </div>
                 <div class="col-lg-6 mb-2 pl-lg-1">
                   <img
                     src="https://images.unsplash.com/photo-1493571716545-b559a19edd14?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=750&q=80"
                     alt=""
-                    class="img-fluid rounded shadow-sm" />
+                    class="img-fluid rounded shadow-sm"
+                  />
                 </div>
                 <div class="col-lg-6 pr-lg-1 mb-2">
                   <img
                     src="https://images.unsplash.com/photo-1453791052107-5c843da62d97?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1350&q=80"
                     alt=""
-                    class="img-fluid rounded shadow-sm" />
+                    class="img-fluid rounded shadow-sm"
+                  />
                 </div>
                 <div class="col-lg-6 pl-lg-1">
                   <img
                     src="https://images.unsplash.com/photo-1475724017904-b712052c192a?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=750&q=80"
                     alt=""
-                    class="img-fluid rounded shadow-sm" />
+                    class="img-fluid rounded shadow-sm"
+                  />
                 </div>
               </div>
             </div>
@@ -146,7 +171,8 @@
             <img
               src="/images/Black Simple Bold Professional Twitter Profile Picture (4).png"
               alt="IMAGE HERE"
-              style="width: 20rem" />
+              style="width: 20rem"
+            />
 
             <p class="Avatar" h2>Change Avatar</p>
 
@@ -161,7 +187,8 @@
                   name="name"
                   style="height: 50px; width: 20rem"
                   placeholder="Name"
-                  required />
+                  required
+                />
               </div>
               <div class="email-input">
                 <label for="email">Email</label>
@@ -171,31 +198,34 @@
                   name="email"
                   style="height: 50px; width: 20rem"
                   placeholder="Email address"
-                  required />
+                  required
+                />
               </div>
             </div>
 
             <div class="btn">
-              <button id="cancel" type="reset" class="btn btn-primary">
-                Cancel
-              </button>
+              <button id="cancel" type="reset" class="btn btn-primary">Cancel</button>
               <button type="submit" class="btn btn-primary">Confirm</button>
             </div>
           </form>
         </div>
       </div>
+      <main class="container">
+        <div class="user-posts"></div>
+        <div class="create-post-button">
+          <i class="fa-regular fa-circle-xmark fa-2x"></i>
+        </div>
     </main>
 
     <footer>
       <li>©2024 Hot Pot</li>
-
+      <br>
       <ul>
         <li><a href="/about.html">About</a></li>
         <li><a href="/faq.html">FAQ</a></li>
         <li><a href="/contact.html">Contact</a></li>
       </ul>
     </footer>
-
     <script src="profile.js"></script>
   </body>
 </html>
