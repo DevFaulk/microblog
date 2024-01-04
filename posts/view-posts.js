@@ -15,36 +15,38 @@ function loadAllPosts() {
     .then((posts) => {
       userPosts.innerHTML = "";
       for (let post of posts) {
+        console.log(post)
         let card = document.createElement("div");
-        card.className = "user-post card";
+        card.className = "card user-post m-3";
 
         let usersName = document.createElement("h3");
         usersName.innerText = post.username;
-        usersName.className = "card-title"
+        usersName.className = "card-title p-3";
 
         let usersMessage = document.createElement("p");
         usersMessage.innerText = post.text;
-        usersMessage.className = "post-content card-text";
+        usersMessage.className = "card-text post-content p-3";
 
-        let heartDiv = document.createElement("div");
-        heartDiv.className = "heart-button";
         let likeContent = document.createElement("div");
-        likeContent.className = "content";
+        likeContent.className =
+          "content d-flex p-1 ps-0 pe-2 m-3 justify-content-evenly align-items-center";
         let heartButton = document.createElement("span");
-        heartButton.className = "heart";
+        heartButton.className = "heart d-flex align-self-stretch";
+        let likeAndNumb = document.createElement("span");
+        likeAndNumb.className = "like-and-numb";
         let likeText = document.createElement("span");
-        likeText.className = "text";
+        likeText.className = "text p-1 fw-bold";
         likeText.innerText = "Like";
         let likeNumb = document.createElement("span");
-        likeNumb.className = "numb";
+        likeNumb.className = "numb p-1";
 
         card.appendChild(usersName);
         card.appendChild(usersMessage);
-        card.appendChild(heartDiv);
-        heartDiv.appendChild(likeContent);
+        card.appendChild(likeContent);
         likeContent.appendChild(heartButton);
-        likeContent.appendChild(likeText);
-        likeContent.appendChild(likeNumb);
+        likeContent.appendChild(likeAndNumb);
+        likeAndNumb.appendChild(likeText);
+        likeAndNumb.appendChild(likeNumb);
         userPosts.appendChild(card);
 
         likeContent.addEventListener("click", () => {

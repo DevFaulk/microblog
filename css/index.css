@@ -17,10 +17,6 @@ main {
 /* * POSTS CSS */
 
 @import url("https://fonts.googleapis.com/css?family=Montserrat:600&display=swap");
-.user-post {
-  display: flex;
-  flex-direction: column;
-}
 
 /* Elements */
 h2 {
@@ -39,29 +35,29 @@ p {
 /* .heart-button{
 } */
 .content {
-  height: 30px;
-  width: fit-content;
-  display: flex;
   border: 2px solid #eae2e1;
   border-radius: 5px;
   cursor: pointer;
+  height: fit-content;
+  width: 15%;
+  padding-block: 0;
 }
 .content.heart-active {
   border-color: #f9b9c4;
   background: #fbd0d8;
 }
 .heart {
-  display: flex;
-  background: url("/images/like-img.png") no-repeat;
-
+  background: url("/images/like-img.png") no-repeat center;
+  display: inline-block;
   /* background-size: 2900%; */
-  height: 90px;
-  width: 90px;
+  height: 50px;
+  width: 50px;
+  background-size: 2900%;
+  background-position: 0
   /* transform: translate(-50%,-50%); */
 }
 .text {
-  font-size: 21px;
-  margin-left: 30px;
+  font-size: 19px;
   color: grey;
   font-family: "Montserrat", sans-serif;
 }
