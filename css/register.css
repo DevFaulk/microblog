@@ -8,6 +8,7 @@ main {
   display: flex;
   flex-direction: column;
   align-items: center;
+  height: 824px;
 }
 
 form {
@@ -15,12 +16,6 @@ form {
   flex-direction: column;
   align-items: center;
   width: 50%;
-}
-
-input[type="text"] {
-  padding: 12px 20px 12px 20px;
-  margin: 8px 0;
-  box-sizing: border-box;
 }
 
 button {
@@ -33,10 +28,29 @@ h2 {
   font-size: 2rem;
 }
 
+/* Registration Input */
+
+input[type="text"] {
+  padding: 12px 20px 12px 20px;
+  margin: 8px 0;
+  box-sizing: border-box;
+}
+
 .input {
   display: flex;
   flex-direction: column;
   justify-content: center;
   width: 50%;
   margin: 24px 24px;
+}
+
+.input label {
+  font-size: 1.2rem;
+  font-weight: bold;
+}
+
+.input {
+  label {
+    margin-block: 1.2rem;
+  }
 }

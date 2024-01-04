@@ -11,9 +11,54 @@
   font-size: 1rem;
 }
 
-body {
-  background-color: #ffe8f5;
+/* Primary Color */
+
+.primary-color {
   color: #9000ff;
+}
+
+/* Secondary Color */
+
+.second-color {
+  background-color: #ffe8f5;
+}
+
+/* Secondary-Alternate Color */
+
+.second-alt-color {
+  background-color: #faf9f6;
+}
+
+/* ---------- */
+
+body {
+  height: 100%;
+  width: 100vw;
+  background-color: #faf9f6;
+  color: #9000ff;
+}
+
+a {
+  color: #9000ff;
+  text-decoration: none;
+  transition: 100ms 25ms;
+}
+
+a:hover {
+  color: #ab3dff;
+  text-decoration: none;
+  transition: 100ms 25ms;
+}
+
+/* Footer */
+footer {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  padding: 2rem 2rem 0 2rem;
+  align-items: center;
+  background-color: #f2fbff;
+  border: 4px solid rgba(255, 255, 255, 0.556);
 }
 
 /* Navbar */
@@ -21,6 +66,9 @@ body {
 header {
   display: flex;
   justify-content: space-between;
+  background-color: #f2fbff;
+  border: 4px solid rgba(255, 255, 255, 0.556);
+  margin-bottom: 2rem;
 }
 
 nav {
@@ -28,7 +76,7 @@ nav {
   justify-content: space-between;
   font-size: 1.3rem;
   width: 100%;
-  padding: 1.5rem 2rem 1rem 2rem;
+  padding: 1.3rem 2rem 1.5rem 2rem;
 }
 
 .profile-logo-dropdown {
@@ -88,4 +136,23 @@ nav {
   align-items: center;
   justify-content: space-between;
   padding: 10px;
+}
+
+/* Button */
+
+button {
+  background-color: #9000ff;
+  color: #ffffff;
+  transition: 100ms 25ms;
+}
+
+button:hover {
+  background-color: #a631ff;
+  color: #ffffff;
+  transition: 100ms 25ms;
+}
+button:active {
+  background-color: #8a1ae0;
+  color: #ffffff;
+  transition: 100ms 25ms;
 }
