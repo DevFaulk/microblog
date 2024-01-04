@@ -1,0 +1,52 @@
+body {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 824px;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 50%;
+}
+
+button {
+  display: inline;
+  width: 50%;
+  margin-top: 3%;
+}
+
+h2 {
+  font-size: 2rem;
+}
+
+/* Login Input */
+
+
+
+.input {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 50%;
+  margin: 24px 24px;
+}
+
+.input label {
+  font-size: 1.2rem;
+  font-weight: bold;
+}
+
+.input {
+  label {
+    margin-block: 1.2rem;
+  }
+}
