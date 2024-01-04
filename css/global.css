@@ -65,6 +65,7 @@ footer {
   align-items: center;
   background-color: #f2fbff;
   border: 4px solid rgba(255, 255, 255, 0.556);
+  border-bottom: none;
 }
 
 /* Navbar */
@@ -74,6 +75,8 @@ header {
   justify-content: space-between;
   background-color: #f2fbff;
   border: 4px solid rgba(255, 255, 255, 0.556);
+  border-top: none;
+  border-inline: none;
   margin-bottom: 2rem;
 }
 
@@ -91,6 +94,7 @@ nav {
   width: 80px;
   height: 80px;
   border-radius: 50%;
+  transition: 0.1s ease;
 }
 
 .navbar-logo:hover {
@@ -102,7 +106,6 @@ nav {
 }
 
 /* App Logo Hover */
-
 .app-logo {
   position: relative;
   z-index: 1;
@@ -120,13 +123,16 @@ nav {
   color: white;
   font-size: 1.1rem;
   border-radius: 50%;
+  transition: 0.1s ease;
 }
+
 #homeOverText:hover + .navbar-logo {
   cursor: pointer;
   filter: brightness(50%);
   width: 80px;
   height: 80px;
   border-radius: 50%;
+  transition: 0.1s ease;
 }
 .home-link:hover .navbar-logo {
   cursor: pointer;
@@ -134,6 +140,7 @@ nav {
   width: 80px;
   height: 80px;
   border-radius: 50%;
+  transition: 0.1s ease;
 }
 
 /* Profile Dropdown Logo */
@@ -145,27 +152,31 @@ nav {
   color: white;
   font-size: 1.1rem;
   cursor: default;
+  transition: 0.1s ease;
 }
 
 #profileOverText:hover ~ .navbar-logo {
   cursor: auto;
-  filter: brightness(80%);
+  filter: brightness(70%);
   width: 80px;
   height: 80px;
   border-radius: 50%;
+  transition: 0.1s ease;
 }
 
 .profile-logo-dropdown > .navbar-logo:hover {
   cursor: auto;
-  filter: brightness(80%);
+  filter: brightness(70%);
   border-radius: 50%;
+  transition: 0.1s ease;
 }
 
 .profile-dropdown-content:hover + .navbar-logo {
   cursor: auto;
-  filter: brightness(80%);
+  filter: brightness(70%);
   width: 80px;
   height: 80px;
+  transition: 0.1s ease;
 }
 
 .profile-logo-dropdown {
@@ -178,21 +189,50 @@ nav {
   position: absolute;
   height: 144px;
   top: 95%;
-  left: 5%;
+  left: 0px;
   z-index: 0;
   flex-direction: column;
 }
 
-/* Settings Dropdown */
+/* Settings/Profile Dropdown */
+
+.profile-dropdown-content * {
+  margin-block: auto;
+}
+.profile-dropdown-content *:hover {
+  margin-block: auto;
+  color: rgb(239, 239, 239);
+  transition: 0.1s ease;
+}
 
 .settings-dropdown {
+  display: flex;
   position: relative;
-  display: inline-block;
+  align-items: center;
+  height: 80px;
+  width: 80px;
+  justify-content: center;
 }
 
 .settings-dropdown-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  position: absolute;
   color: white;
-  right: 25%;
+  right: 0px;
+  top: 95%;
+}
+
+.settings-dropdown-content * {
+  display: flex;
+  margin-block: auto;
+}
+.settings-dropdown-content a:hover {
+  display: flex;
+  margin-block: auto;
+  color: rgb(239, 239, 239);
+  transition: 0.1s ease;
 }
 
 .profile-dropdown-content,
@@ -213,6 +253,8 @@ nav {
 .profile-dropdown-content a,
 .settings-dropdown-content a {
   color: white;
+
+  /* Setting Dropdown Content */
 }
 .toggle-dark-mode {
   display: flex;
