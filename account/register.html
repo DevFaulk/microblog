@@ -12,41 +12,53 @@
       rel="stylesheet"
       href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" />
     <!-- Global CSS (CSS rules you want applied to all pages) -->
-    <link rel="stylesheet" href="css/global.css" />
+    <link rel="stylesheet" href="/css/global.css" />
     <!-- Page-specific CSS -->
     <link rel="stylesheet" href="/css/register.css" />
     <!-- Head Scripts -->
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.bundle.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <script src="/account/auth.js"></script>
-    <script>
-      if (isLoggedIn() === false) {
-        window.location.replace("../account/login.html");
-      }
-    </script>
     <script
       src="https://kit.fontawesome.com/34bff2d1b9.js"
       crossorigin="anonymous"></script>
   </head>
   <body>
-    <main>
+    <header>
       <nav>
-        <strong>Register</strong>
-        <a href="login.html">Login</a>
+        <div class="login-link">
+          <a href="/account/login.html">Login</a>
+        </div>
+        <div class="settings-dropdown">
+          <i style="font-size: 24px" class="fa">&#xf013;</i>
+          <div class="settings-dropdown-content">
+            <div class="toggle-dark-mode">
+              <div class="help"><a href="questions.html">Help</a></div>
+              <p id="toggleDarkMode">Dark Mode</p>
+              <i class="fa-solid fa-toggle-on"></i>
+            </div>
+          </div>
+        </div>
       </nav>
+    </header>
+    <main>
       <form>
-        <h2>User Registration</h2>
+        <div class="page-header">
+          <h2>User Registration</h2>
+        </div>
+        <div class="input">
+          <label for="username">Username:</label>
+          <input type="text" id="username" minlength="3" />
 
-        <label for="username">Username:</label>
-        <input type="text" id="username" />
+          <label for="fullName">Full Name:</label>
+          <input type="text" id="fullName" />
 
-        <label for="fullName">Full Name:</label>
-        <input type="text" id="fullName" />
-
-        <label for="password">Password:</label>
-        <input type="text" id="password" />
-
-        <button id="registerButton" type="button">Register</button>
+          <label for="password">Password:</label>
+          <input type="text" id="password" minlength="6" />
+        </div>
+        <button class="btn btn-primary" id="registerButton" type="button">
+          Register
+        </button>
       </form>
     </main>
     <footer>

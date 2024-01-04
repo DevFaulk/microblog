@@ -1,0 +1,33 @@
+body {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 100%;
+  width: 100vw;
+}
+
+form {
+  text-align: center;
+}
+
+input[type="text"] {
+  width: 50%;
+  padding: 12px 20px 12px 20px;
+  margin: 8px 0;
+  box-sizing: border-box;
+}
+
+input:not([type="checkbox"], [type="radio"]),
+select,
+textarea {
+  width: 50%;
+}
+
+button {
+  width: 25%;
+  margin-top: 3%;
+}
+
+h1 {
+  text-align: center;
+}
