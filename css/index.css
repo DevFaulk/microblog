@@ -2,10 +2,8 @@
 body {
   height: 100%;
   width: 100vw;
-  background-color: #FAF9F6;
+  background-color: #faf9f6;
 }
-
-
 
 main {
   display: flex;
@@ -13,19 +11,11 @@ main {
   height: 1024px;
 }
 
-footer {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding-block: 12px !important;
-}
-
-header {
-  padding-bottom: 3%;
-  padding-top: 3%;
-}
-
 /* Sections */
+
+/* Navbar */
+
+
 
 /* Post Section */
 .post-section {
@@ -140,4 +130,3 @@ header {
   background-size: cover;
   background-repeat: no-repeat;
 }
-

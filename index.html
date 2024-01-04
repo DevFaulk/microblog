@@ -17,8 +17,8 @@
     <!-- Page-specific CSS -->
     <link rel="stylesheet" href="/css/index.css" />
     <!-- Head Scripts -->
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.bundle.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.bundle.min.js"></script>
     <script src="/account/auth.js"></script>
     <script>
       if (isLoggedIn() === false) {
@@ -31,22 +31,23 @@
   </head>
   <body>
     <header>
-      <div class="profile-logo-dropdown">
+      <div id="profileLogo" class="profile-logo-dropdown">
+        <span id="profileOverText">Profile</span>
         <img
           src="/images/Black Simple Bold Professional Twitter Profile Picture (7).png"
           alt="profile logo"
-          width="120"
-          height="120" />
+          class="navbar-logo" />
         <div class="profile-dropdown-content">
           <a href="account/profile.html">Go to Profile</a>
           <a id="loginLink" href="account/login.html">Login</a>
           <a href="account/register.html">Register</a>
         </div>
       </div>
-      <div class="app-logo">
+      <div id="appLogo" class="app-logo">
+        <span id="homeHoverText">Home</span>
         <a href="../index.html">
-          <img src="/images/The_Hot_Pot.png"" alt="app logo" width="120"
-          height="120"/>
+          <img src="/images/The_Hot_Pot.png"" alt="app logo" class="navbar-logo"
+          />
         </a>
       </div>
       <div class="settings-dropdown">

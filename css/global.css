@@ -85,6 +85,32 @@ nav {
   padding: 1.3rem 2rem 1.5rem 2rem;
 }
 
+#profileOverText {
+  display: none;
+}
+#homeOverText {
+  display: none;
+}
+
+.navbar-logo {
+  width: 80px;
+  height: 80px;
+}
+
+.navbar-logo:hover {
+  cursor: pointer;
+  filter: brightness(50%);
+  width: 80px;
+  height: 80px;
+}
+
+.profile-logo-dropdown > .navbar-logo:hover {
+  cursor: auto;
+  filter: brightness(80%);
+  width: 80px;
+  height: 80px;
+}
+
 .profile-logo-dropdown {
   position: relative;
   display: inline-block;
@@ -100,7 +126,7 @@ nav {
 }
 
 .settings-dropdown-content {
-  color: black;
+  color: white;
   right: 25%;
 }
 
@@ -108,7 +134,8 @@ nav {
 .settings-dropdown-content {
   display: none;
   position: absolute;
-  background-color: #19242c;
+  background-color: rgba(25, 36, 44, 0.755);
+  backdrop-filter: blur(4px);
   min-width: 160px;
   box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
   padding: 12px 16px;
@@ -118,7 +145,10 @@ nav {
 .settings-dropdown:hover .settings-dropdown-content {
   display: flex;
 }
-
+.profile-dropdown-content a,
+.settings-dropdown-content a {
+  color: white;
+}
 .toggle-dark-mode {
   display: flex;
   align-items: center;
