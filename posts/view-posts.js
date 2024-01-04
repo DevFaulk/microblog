@@ -35,7 +35,6 @@ function loadAllPosts() {
 
         if (match) {
           // If an image URL is found, create an image element
-          // console.log(match)
           const imageUrl = match[1];
           const imageElement = document.createElement("img");
           imageElement.className = "post-img card-img p-1 m-3 shadow";
