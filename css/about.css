@@ -1,18 +1,19 @@
 a {
   color: #1b2832;
+ margin: 5rem 5rem 5rem 5rem;
 }
 p {
   color: #1b2832;
+  font-size: 1.5rem;
 }
 h3{
   color: #1b2832;
 }
-header{
-  background-color: #faf9f6;
-}
 main {
   text-align: center;
-  background-color: #faf9f6;
+}
+body{
+  background-color: #faf9f6;;
 }
 footer {
   background-color: #faf9f6;
