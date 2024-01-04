@@ -1,19 +1,5 @@
 "use strict";
 
-// Auth scripts
-
-// Logged In Check
-// if (isLoggedIn() === false) {
-//   window.location.replace("../account/register.html");
-// }
-
-// Change Login to Logout if logged in
-let loginLink = document.getElementById("loginLink");
-if (isLoggedIn() === true) {
-  loginLink.innerText = "Logout";
-  loginLink.onclick = logout
-}
-
 // Post card scripts
 
 let postCard = document.querySelector(".post-card");
@@ -59,9 +45,17 @@ function loadAllPosts() {
         likeContent.appendChild(likeText);
         likeContent.appendChild(likeNumb);
         postCard.appendChild(card);
+
+        likeContent.addEventListener("click", () => {
+          likeContent.classList.toggle("heart-active");
+          likeText.classList.toggle("heart-active");
+          likeNumb.classList.toggle("heart-active");
+          heartButton.classList.toggle("heart-active");
+        });
       }
     });
 }
 
+// Function Calls
+
 loadAllPosts();
-setInterval(loadAllPosts, 3000);
