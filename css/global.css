@@ -80,7 +80,7 @@ header {
   display: flex;
   justify-content: space-between;
   background-color: #fff;
-  border: 4px solid rgba(255, 255, 255, 0.556);
+  /* border: 4px solid rgba(255, 255, 255, 0.556); */
   border-top: none;
   border-inline: none;
   margin-bottom: 2rem;
