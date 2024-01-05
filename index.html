@@ -40,26 +40,32 @@
   <body>
     <header class="shadow-sm">
       <nav class="p-3">
-        <div id="profileLogo" class="profile-logo-dropdown">
-          <span id="profileOverText" style="display: none">Profile</span>
-          <div class="profile-dropdown-content">
-            <a href="account/profile.html">Go to Profile</a>
-            <a id="loginLink" href="account/login.html">Login</a>
-            <a href="account/register.html">Register</a>
-          </div>
-          <img src="/images/profile-picture.png" alt="profile logo" class="navbar-logo" />
-        </div>
         <div id="appLogo" class="app-logo">
           <a class="home-link" href="../index.html">
             <span id="homeHoverText" style="display: none; transition: 0.1s ease">Home</span>
             <img src="/images/The_Melting_Pot.png" alt="app logo" class="navbar-logo" />
           </a>
         </div>
-        <div class="settings-dropdown">
-          <i style="font-size: 36px" class="fa">&#xf013;</i>
-          <div class="settings-dropdown-content">
-            <div class="toggle-dark-mode"></div>
-            <a href="questions.html">Help</a>
+
+        <div class="d-flex">
+          <div class="settings-dropdown">
+            <i style="font-size: 36px" class="fa">&#xf013;</i>
+            <div class="settings-dropdown-content">
+              <div class="toggle-dark-mode">
+                <p id="toggleDarkMode">Dark Mode</p>
+                <i class="fa-solid fa-toggle-on"></i>
+              </div>
+              <a href="questions.html">Help</a>
+            </div>
+          </div>
+          <div id="profileLogo" class="profile-logo-dropdown">
+            <span id="profileOverText" style="display: none">Profile</span>
+            <div class="profile-dropdown-content">
+              <a href="account/profile.html">Go to Profile</a>
+              <a id="loginLink" href="account/login.html">Login</a>
+              <a href="account/register.html">Register</a>
+            </div>
+            <img src="/images/profile-picture.png" alt="profile logo" class="navbar-logo" />
           </div>
         </div>
       </nav>
