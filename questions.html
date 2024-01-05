@@ -41,60 +41,59 @@
   <body>
     <header class="shadow-sm">
       <nav class="p-3">
-        <div id="profileLogo" class="profile-logo-dropdown">
-          <span id="profileOverText" style="display: none">Profile</span>
-          <div class="profile-dropdown-content">
-            <a href="account/profile.html">Go to Profile</a>
-            <a id="loginLink" href="account/login.html">Login</a>
-            <a href="account/register.html">Register</a>
-          </div>
-          <img
-            src="/images/profile-picture.png"
-            alt="profile logo"
-            class="navbar-logo"
-          />
-        </div>
         <div id="appLogo" class="app-logo">
           <a class="home-link" href="../index.html">
             <span id="homeHoverText" style="display: none; transition: 0.1s ease">Home</span>
             <img src="/images/The_Melting_Pot.png" alt="app logo" class="navbar-logo" />
           </a>
         </div>
-        <div class="settings-dropdown">
-          <i style="font-size: 36px" class="fa">&#xf013;</i>
-          <div class="settings-dropdown-content">
-            <div class="toggle-dark-mode">
-              <p id="toggleDarkMode">Dark Mode</p>
-              <i class="fa-solid fa-toggle-on"></i>
+
+        <div class="d-flex">
+          <div class="settings-dropdown">
+            <i style="font-size: 36px" class="fa">&#xf013;</i>
+            <div class="settings-dropdown-content">
+              <div class="toggle-dark-mode">
+                <p id="toggleDarkMode">Dark Mode</p>
+                <i class="fa-solid fa-toggle-on"></i>
+              </div>
+              <a href="questions.html">Help</a>
             </div>
-            <a href="questions.html">Help</a>
+          </div>
+          <div id="profileLogo" class="profile-logo-dropdown">
+            <span id="profileOverText" style="display: none">Profile</span>
+            <div class="profile-dropdown-content">
+              <a href="account/profile.html">Profile</a>
+              <a id="loginLink" href="account/login.html">Login</a>
+              <a href="account/register.html">Register</a>
+            </div>
+            <img src="/images/profile-picture.png" alt="profile logo" class="navbar-logo" />
           </div>
         </div>
       </nav>
     </header>
+    <main class="container">
+      <h1>FAQ</h1>
 
-    <h1>FAQ</h1>
-    <p>If you have any questions about HotPot you have come to the right place</p>
+      <div class="card p-4 my-4">
+        <p>If you have any questions about HotPot you have come to the right place.</p>
+        <h3>Q1:What is HotPot??</h3>
+        <p>
+          HotPot is a social media platform similar to Twitter where you can connect and communicate with anyone in the
+          world
+        </p>
 
-    <div>
-      <h3>Q1:What is HotPot??</h3>
-      <p>
-        HotPot is a social media platform similar to Twitter where you can connect and communicate with anyone in the
-        world
-      </p>
+        <h3>Q2:How do I use HotPot??</h3>
+        <p>You can interact through a series of posts where you can share your thoughts on whatever comes to mind</p>
 
-      <h3>Q2:How do I use HotPot??</h3>
-      <p>You can interact through a series of posts where you can share your thoughts on whatever comes to mind</p>
-
-      <h3>Q3:How is HotPot different than any other social media platform?</h3>
-      <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quae, eius.</p>
-    </div>
+        <h3>Q3:How is HotPot different than any other social media platform?</h3>
+        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quae, eius.</p>
+      </div>
+    </main>
     <footer>
-      
       ©2024 Hot Pot
-     
+      <ul>
         <li><a href="/about.html">About</a></li>
-        <li> <a href="questions.html"></a>
+        <li><a href="questions.html"></a></li>
         <li><a href="/contact.html">Contact</a></li>
       </ul>
     </footer>
