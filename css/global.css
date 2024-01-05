@@ -286,7 +286,7 @@ nav {
 
 /* Button */
 
-button {
+/* button {
   background-color: #9000ff;
   color: #ffffff;
   transition: 100ms 25ms;
@@ -301,7 +301,7 @@ button:active {
   background-color: #8a1ae0;
   color: #ffffff;
   transition: 100ms 25ms;
-}
+} */
 
 h1{
   color: #ffffff;
