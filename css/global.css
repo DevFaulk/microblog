@@ -302,3 +302,9 @@ button:active {
   color: #ffffff;
   transition: 100ms 25ms;
 }
+
+h1{
+  color: #ffffff;
+  text-transform: uppercase;
+  
+}

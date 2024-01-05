@@ -16,7 +16,7 @@ function loadAllPosts() {
       userPosts.innerHTML = "";
       for (let post of posts) {
         let card = document.createElement("div");
-        card.className = "card user-post m-3";
+        card.className = "card user-post my-5";
 
         let usersName = document.createElement("em");
         usersName.innerText = `@${post.username}`;
