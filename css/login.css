@@ -1,15 +1,15 @@
 body {
   display: flex;
   flex-direction: column;
+  height: 100vh;
   justify-content: space-between;
 }
-
 
 main {
   display: flex;
   flex-direction: column;
-  align-items: center;
-  height: 824px;
+  justify-content: center;
+  height: 100%;
 }
 
 form {
@@ -31,14 +31,11 @@ h2 {
 
 /* Login Input */
 
-
-
 .input {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  width: 50%;
-  margin: 24px 24px;
+  width: 300px;
 }
 
 .input label {
@@ -50,4 +47,53 @@ h2 {
   label {
     margin-block: 1.2rem;
   }
+}
+
+.divider:after,
+.divider:before {
+  content: "";
+  flex: 1;
+  height: 1px;
+  background: #eee;
+}
+.h-custom {
+  height: calc(100% - 73px);
+}
+@media (max-width: 450px) {
+  .h-custom {
+    height: 100%;
+  }
+}
+
+hr {
+  margin: 1rem 0;
+  color: inherit;
+  border: solid 2px gray;
+  border-top-width: 2px;
+  border-top-style: solid;
+  border-top-color: gray;
+  border-top: var(--bs-border-width) solid;
+  opacity: 0.5;
+  width: 300px;
+}
+
+.input-block {
+  display: flex;
+  justify-content: center;
+  margin-inline-start: 4rem;
+}
+
+.register-link {
+  font-weight: bold;
+}
+
+.img-div img {
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
+}
+.img-div {
+  width: 30%;
+  height: auto;
+  margin: 1rem;
 }

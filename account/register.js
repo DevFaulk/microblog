@@ -28,7 +28,7 @@ function addUser() {
     },
     body: JSON.stringify(user),
   }).then(function () {
-    window.location.href = "register.html";
+    window.location.href = "../index.html";
   });
 }
 

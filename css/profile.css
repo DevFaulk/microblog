@@ -1,10 +1,16 @@
+
+main {
+  display: flex;
+  justify-content: space-between;
+  height: 100%;
+}
+
 .grid {
   box-shadow: 0 4px 8px 0 rgba(7, 5, 5, 0.2);
   max-width: 600px;
   max-height: 200rem;
   margin: auto;
   text-align: center;
-
 }
 
 .title {
@@ -116,9 +122,6 @@ body {
   filter: drop-shadow(1px 1px 8px rgba(0, 0, 0, 0.459));
   backdrop-filter: blur(6px);
 }
-
-
-
 
 .close {
   position: absolute;

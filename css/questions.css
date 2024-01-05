@@ -1,0 +1,16 @@
+main {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-content: center;
+}
+
+h1 {
+  font-weight: bold;
+}
+
+.content-card {
+  height: 70vh;
+  min-height: 380px;
+}

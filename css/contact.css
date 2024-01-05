@@ -1,0 +1,10 @@
+body {
+  height: 50vh;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+}
+
+main {
+  padding: 2rem;
+}

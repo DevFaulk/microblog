@@ -6,13 +6,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>FAQ</title>
     <!-- External CSS -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
     <link
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
       rel="stylesheet"
       integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
-      crossorigin="anonymous"
-    />
+      crossorigin="anonymous" />
     <!-- Global CSS (CSS rules you want applied to all pages) -->
     <link rel="stylesheet" href="/css/global.css" />
     <!-- Page-specific CSS -->
@@ -22,20 +23,20 @@
       src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"
       integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g=="
       crossorigin="anonymous"
-      referrerpolicy="no-referrer"
-    ></script>
+      referrerpolicy="no-referrer"></script>
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
       integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
-      crossorigin="anonymous"
-    ></script>
+      crossorigin="anonymous"></script>
     <script src="/account/auth.js"></script>
     <script>
       if (isLoggedIn() === false) {
         window.location.replace("../account/login.html");
       }
     </script>
-    <script src="https://kit.fontawesome.com/34bff2d1b9.js" crossorigin="anonymous"></script>
+    <script
+      src="https://kit.fontawesome.com/34bff2d1b9.js"
+      crossorigin="anonymous"></script>
   </head>
 
   <body>
@@ -48,10 +49,25 @@
           </a>
         </div> -->
         <a href="/">
-          <svg id="logo-38" width="78" height="32" viewBox="0 0 78 32" fill="none" xmlns="http://www.w3.org/2000/svg">
-            <path d="M55.5 0H77.5L58.5 32H36.5L55.5 0Z" class="ccustom" fill="#FF7A00"></path>
-            <path d="M35.5 0H51.5L32.5 32H16.5L35.5 0Z" class="ccompli1" fill="#FF9736"></path>
-            <path d="M19.5 0H31.5L12.5 32H0.5L19.5 0Z" class="ccompli2" fill="#FFBC7D"></path>
+          <svg
+            id="logo-38"
+            width="78"
+            height="32"
+            viewBox="0 0 78 32"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg">
+            <path
+              d="M55.5 0H77.5L58.5 32H36.5L55.5 0Z"
+              class="ccustom"
+              fill="#FF7A00"></path>
+            <path
+              d="M35.5 0H51.5L32.5 32H16.5L35.5 0Z"
+              class="ccompli1"
+              fill="#FF9736"></path>
+            <path
+              d="M19.5 0H31.5L12.5 32H0.5L19.5 0Z"
+              class="ccompli2"
+              fill="#FFBC7D"></path>
           </svg>
         </a>
         <div class="d-flex">
@@ -72,7 +88,10 @@
               <a id="loginLink" href="account/login.html">Login</a>
               <a href="account/register.html">Register</a>
             </div>
-            <img src="/images/profile-picture.png" alt="profile logo" class="navbar-logo" />
+            <img
+              src="/images/profile-picture.png"
+              alt="profile logo"
+              class="navbar-logo" />
           </div>
         </div>
       </nav>
@@ -80,28 +99,47 @@
     <main class="container">
       <h1>FAQ</h1>
 
-      <div class="card p-4 my-4">
-        <p>If you have any questions about HotPot you have come to the right place.</p>
-        <h3>Q1:What is HotPot??</h3>
+      <div
+        class="content-card card p-4 my-4 shadow d-flex justify-content-between align-content-between">
         <p>
-          HotPot is a social media platform similar to Twitter where you can connect and communicate with anyone in the
-          world
+          If you have any questions about HotPot you have come to the right
+          place.
+        </p>
+        <h3>Q1: What is HotPot??</h3>
+        <p>
+          HotPot is a social media platform similar to Twitter where you can
+          connect and communicate with anyone in the world
         </p>
 
-        <h3>Q2:How do I use HotPot??</h3>
-        <p>You can interact through a series of posts where you can share your thoughts on whatever comes to mind</p>
+        <h3>Q2: How do I use HotPot??</h3>
+        <p>
+          You can interact through a series of posts where you can share your
+          thoughts on whatever comes to mind
+        </p>
 
-        <h3>Q3:How is HotPot different than any other social media platform?</h3>
-        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quae, eius.</p>
+        <h3>
+          Q3: How is HotPot different than any other social media platform?
+        </h3>
+        <p>
+          Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quae, eius.
+        </p>
       </div>
     </main>
-    <footer>
-      ©2024 Hot Pot
-      <ul>
-        <li><a href="/about.html">About</a></li>
-        <li><a href="questions.html"></a></li>
-        <li><a href="/contact.html">Contact</a></li>
-      </ul>
+    <footer
+      class="d-flex flex-column flex-md-row text-center text-md-start justify-content-between py-4 px-4 px-xl-5">
+      <!-- Left -->
+      <div class="mb-3 mb-md-0 primary-color opacity-75">
+        Melting Pot © 2024.
+      </div>
+      <!-- Left -->
+
+      <!-- Right -->
+      <div class="opacity-75">
+        <a href="/about.html">About</a>
+        <a href="/faq.html">FAQ</a>
+        <a href="/contact.html">Contact</a>
+      </div>
+      <!-- Right -->
     </footer>
   </body>
 </html>

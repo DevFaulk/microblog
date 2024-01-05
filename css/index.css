@@ -8,6 +8,7 @@ body {
 main {
   display: flex;
   flex-direction: column;
+  min-height: 670px;
 }
 
 /* Sections */
@@ -72,7 +73,6 @@ p {
 .text {
   font-size: 19px;
   color: grey;
-
 }
 .numb:before {
   content: "0";
@@ -144,9 +144,13 @@ p {
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  height: 360px;
+  min-height: 480px;
+  max-height: 550px;
+  font-size: 1.3rem;
   width: 50%;
   border-radius: 8px;
+  background-color: rgba(255, 255, 255, 0.8);
+  backdrop-filter: blur(6px);
   filter: drop-shadow(1px 1px 8px rgba(0, 0, 0, 0.459));
 }
 
@@ -171,4 +175,14 @@ p {
   display: flex;
   flex-direction: column;
   gap: 2rem;
+}
+
+.post-time {
+  height: 62px;
+  padding-top: 10px !important;
+  border: 2px solid rgba(188, 188, 188, 0.509) !important;
+  color: gray !important;
+}
+.post-time #text {
+  margin: auto;
 }
