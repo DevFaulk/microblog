@@ -31,12 +31,7 @@ button {
   font-size: 18px;
 }
 
-a {
-  text-decoration: none;
-  font-size: 22px;
-  color: black;
-  padding: 2rem;
-}
+
 
 button:hover,
 a:hover {
