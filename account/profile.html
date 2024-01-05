@@ -60,7 +60,7 @@
               >Home</span
             >
             <img
-              src="/images/The Melting Pot.png"
+              src="/images/The_Melting_Pot.png"
               alt="app logo"
               class="navbar-logo" />
           </a>
@@ -83,7 +83,7 @@
         <div class="col-md-5 mx-auto">
           <!-- Profile widget -->
           <div class="bg-white shadow rounded overflow-hidden">
-            <div class="px-4 pt-0 pb-4 cover">
+            <div class="px-4 pt-0  cover">
               <div class="media align-items-end profile-head">
                 <div class="profile mr-3">
                   <img
@@ -102,8 +102,8 @@
 
                 </div>
                 <div class="media-body mb-5 text-white">  
-                  <h4 class="mt0- mb-0"></h4>
-                  <p class="small mb-0">
+                  <h4 class="mt0- mb-0" id="fullNameHeading"></h4>
+                  <p class="small mb-0" id="userNameParagraph">
                  
                   </p>
                 </div>
@@ -128,8 +128,10 @@
             <div class="px-4 py-3">
               <h5 class="mb-0">About</h5>
               <div class="p-4 rounded shadow-sm bg-light">
+                <p id="bioParagraph"></p>
               </div>
             </div>
+            <div class="user-posts"></div>
             <div class="py-4 px-4">
               <div class="d-flex align-items-center justify-content-between mb-3">
                 <h5 class="mb-0">Recent photos</h5>
@@ -230,12 +232,7 @@
           </form>
         </div>
       </div>
-      <main class="container">
-        <div class="user-posts"></div>
-        <div class="create-post-button">
-          <i class="fa-regular fa-circle-xmark fa-2x"></i>
-        </div>
-    </main>
+      
 
     <footer>
       ©2024 Melting Pot

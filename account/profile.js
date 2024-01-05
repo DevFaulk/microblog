@@ -40,7 +40,7 @@ function loadAllPosts() {
         usersContent.className = "card-body post-content d-flex justify-content-between p-3";
         let usersMessage = document.createElement("p");
         usersMessage.innerText = post.text;
-        usersMessage.className = "card-text post-content p-3";
+        usersMessage.className = "card-text post-content";
         let usersPhoto = document.createElement("div");
         usersPhoto.className = "photo";
 
@@ -75,12 +75,10 @@ function loadAllPosts() {
         let likeNumb = document.createElement("span");
         likeNumb.className = "numb p-1";
 
-        
-
         card.appendChild(usersName);
         card.appendChild(usersContent);
         usersContent.appendChild(usersMessage);
-        usersContent.appendChild(usersPhoto)
+        usersContent.appendChild(usersPhoto);
         card.appendChild(likeContent);
         likeContent.appendChild(heartButton);
         likeContent.appendChild(likeAndNumb);
@@ -105,14 +103,17 @@ function getUserInfo() {
       Authorization: `Bearer ${loginData.token}`,
     },
   })
-    .then((response) => response.json()).then((user) => {
-      let userNameHeading = document.getElementById("userNameHeading");
+    .then((response) => response.json())
+    .then((user) => {
+      const fullNameHeading = document.getElementById("fullNameHeading");
+      fullNameHeading.innerText = user.fullName;
 
-      userNameHeading.innerText = user.fullName
+      const userNameParagraph = document.getElementById("userNameParagraph");
+      userNameParagraph.innerText = `@${user.username}`;
 
-      
-      ;})
-    
+      const bioParagraph = document.getElementById("bioParagraph");
+      bioParagraph.innerText = user.bio;
+    });
 }
 
 // Function Calls

@@ -39,9 +39,9 @@ a:hover {
 
 .card {
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
-  max-width: 300px;
+  /* max-width: 300px; */
   margin: auto;
-  text-align: center;
+  /* text-align: center; */
   font-family: arial;
 }
 
@@ -75,7 +75,8 @@ a:hover {
 }
 
 .profile-head {
-  transform: translateY(5rem);
+  /* transform: translateY(5rem); */
+  padding-block: 2rem;
 }
 
 .cover {
