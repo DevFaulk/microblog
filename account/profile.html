@@ -40,72 +40,58 @@
   <body>
     <header class="shadow-sm">
       <nav class="p-3">
-        <div id="profileLogo" class="profile-logo-dropdown">
-          <span id="profileOverText" style="display: none">Profile</span>
-          <div class="profile-dropdown-content">
-            <a href="account/profile.html">Go to Profile</a>
-            <a id="loginLink" href="account/login.html">Login</a>
-            <a href="account/register.html">Register</a>
-          </div>
-          <img
-            src="/images/Black Simple Bold Professional Twitter Profile Picture (7).png"
-            alt="profile logo"
-            class="navbar-logo" />
-        </div>
         <div id="appLogo" class="app-logo">
           <a class="home-link" href="../index.html">
-            <span
-              id="homeHoverText"
-              style="display: none; transition: 0.1s ease"
-              >Home</span
-            >
-            <img
-              src="/images/The_Melting_Pot.png"
-              alt="app logo"
-              class="navbar-logo" />
+            <span id="homeHoverText" style="display: none; transition: 0.1s ease">Home</span>
+            <img src="/images/The_Melting_Pot.png" alt="app logo" class="navbar-logo" />
           </a>
         </div>
-        <div class="settings-dropdown">
-          <i style="font-size: 36px" class="fa">&#xf013;</i>
-          <div class="settings-dropdown-content">
-            <div class="toggle-dark-mode">
-              <p id="toggleDarkMode">Dark Mode</p>
-              <i class="fa-solid fa-toggle-on"></i>
+
+        <div class="d-flex">
+          <div class="settings-dropdown">
+            <i style="font-size: 36px" class="fa">&#xf013;</i>
+            <div class="settings-dropdown-content">
+              <div class="toggle-dark-mode">
+                <p id="toggleDarkMode">Dark Mode</p>
+                <i class="fa-solid fa-toggle-on"></i>
+              </div>
+              <a href="questions.html">Help</a>
             </div>
-            <a href="questions.html">Help</a>
+          </div>
+          <div id="profileLogo" class="profile-logo-dropdown">
+            <span id="profileOverText" style="display: none">Profile</span>
+            <div class="profile-dropdown-content">
+              <a href="account/profile.html">Go to Profile</a>
+              <a id="loginLink" href="account/login.html">Login</a>
+              <a href="account/register.html">Register</a>
+            </div>
+            <img src="/images/profile-picture.png" alt="profile logo" class="navbar-logo" />
           </div>
         </div>
       </nav>
     </header>
     <main class="profile-page">
-     
       <div class="row py-5 px-4">
         <div class="col-md-5 mx-auto">
           <!-- Profile widget -->
           <div class="bg-white shadow rounded overflow-hidden">
-            <div class="px-4 pt-0  cover">
+            <div class="px-4 pt-0 cover">
               <div class="media align-items-end profile-head">
                 <div class="profile mr-3">
                   <img
                     src="https://images.unsplash.com/photo-1522075469751-3a6694fb2f61?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=80"
                     alt="..."
                     width="130"
-                    class="rounded mb-2 img-thumbnail" /><a
-                    href="#"
-                    class="btn btn-outline-light btn-sm btn-block"
-                    style="margin-left: 2%;"
-                    id="editProfile"
+                    class="rounded mb-2 img-thumbnail"
+                  />
+                  <a href="#" class="btn btn-outline-light btn-sm btn-block" style="margin-left: 2%" id="editProfile"
                     >Edit profile</a
                   >
-                  <div class="media-body mb-5 text-white">
-                  </div>
-
+                  <div class="media-body mb-5 text-white"></div>
                 </div>
-                <div class="media-body mb-5 text-white">  
+                <div class="media-body mb-5 text-white">
                   <h4 class="mt0- mb-0" id="fullNameHeading"></h4>
-                  <p class="small mb-0" id="userNameParagraph">
-                 
-                  </p>
+                  <p class="small mb-0" id="userNameParagraph"></p>
                 </div>
               </div>
             </div>
@@ -177,17 +163,11 @@
           <form name="create-post" method="dialog">
             <span class="close">&times;</span>
 
-            <img
-              src="/images/default Deli.jpg"
-              alt="IMAGE HERE"
-              class="rounded mb-2 img-thumbnail" /><a
-              style="width: 20rem">
+            <img src="/images/default_deli.jpg" alt="IMAGE HERE" class="rounded mb-2 img-thumbnail" /><
 
-            <p class="Avatar" h2>Change Avatar</p>
+            <p class="Avatar">Change Avatar</p>
 
             <div style="margin: 20px 0">
-         
-
               <div class="name-input">
                 <label for="name">Name</label>
                 <input
@@ -196,7 +176,8 @@
                   name="name"
                   style="height: 50px; width: 20rem"
                   placeholder="Name"
-                  required />
+                  required
+                />
               </div>
 
               <div class="bio-input">
@@ -207,7 +188,8 @@
                   name="bio"
                   style="height: 50px; width: 20rem"
                   placeholder="10 characters or less"
-                  required />
+                  required
+                />
               </div>
 
               <div class="email-input">
@@ -224,16 +206,13 @@
             </div>
 
             <div class="btn">
-              <button id="cancel" type="reset"  style="margin-bottom: 2%;"   class="btn btn-primary">   
-                Cancel
-              </button>
+              <button id="cancel" type="reset" style="margin-bottom: 2%" class="btn btn-primary">Cancel</button>
               <button type="submit" class="btn btn-primary">Confirm</button>
             </div>
           </form>
         </div>
       </div>
-      
-
+    </main>
     <footer>
       ©2024 Melting Pot
 

@@ -188,7 +188,7 @@ nav {
   position: absolute;
   height: 144px;
   top: 95%;
-  left: 0px;
+  left: -100px;
   z-index: 0;
   flex-direction: column;
 }
